@@ -221,6 +221,110 @@ export const faqItems: FAQItem[] = [
     sourceStatus: "official",
   },
 
+  // /chapter-2-basement FAQs
+  {
+    id: "ch2-where-find-key",
+    question: "Where is the Basement Key in Search For The Needle Chapter 2?",
+    answer:
+      "The Basement Key is hidden inside the haystack in the Chapter 2 area (Place ID 83445806734780), the same way the needle is hidden in Chapter 1. Bring Dynamite or the Vacuum — both clear bulk hay fastest and surface the Key faster than manual searching.",
+    pageIds: ["fixed-search-for-the-needle-chapter-2-basement-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ch2-lever-order",
+    question: "Do the three Chapter 2 Levers have to be pulled in a specific order?",
+    answer:
+      "No. The three Levers (Green behind the haystack near the boxes, Red near the Sell Hay cart behind the board, Purple beside the Alien's Jail) can be pulled in any order — the secret puzzle room opens once all three are down.",
+    pageIds: ["fixed-search-for-the-needle-chapter-2-basement-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ch2-puzzle-help",
+    question: "How do I solve the three Chapter 2 Puzzles?",
+    answer:
+      "The three Puzzles are: Crystal (count the red/green/purple crystals in the walls and enter the three numbers on the console), Code (read the digits on the papers scattered around the map and enter them on the keypad), and Picture (slide the 16 tiles until the picture assembles). All three Puzzles must be solved before the red laser traps drop.",
+    pageIds: ["fixed-search-for-the-needle-chapter-2-basement-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ch2-reward",
+    question: "What reward do you get for finishing Chapter 2?",
+    answer:
+      "Completing Chapter 2 rewards +25 Gems and unlocks a Chapter 3 teaser. The Finished Chapter 2! badge is granted alongside the +25 Gems when the UFO escape cutscene completes.",
+    pageIds: ["fixed-search-for-the-needle-chapter-2-basement-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ch2-chapter-3",
+    question: "Does Chapter 2 unlock Chapter 3?",
+    answer:
+      "Completing Chapter 2 rolls a Chapter 3 teaser — Chapter 3 is not yet officially documented as live, so the teaser is the only confirmed Chapter 3 signal as of 2026-09-14. Check the /updates page for the first confirmation when Garage Games announces Chapter 3.",
+    pageIds: ["fixed-search-for-the-needle-chapter-2-basement-en-US"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /classes FAQs
+  {
+    id: "classes-how-many",
+    question: "How many classes are in Search For The Needle?",
+    answer:
+      "Eight classes are rollable: Starter, Pack Mule, Hay Merchant, Forkmaster, Demolitionist, Prospector, Drone Specialist, and Ultimate Farmer. All eight are documented in the same third-party beginner guide with identical roll chances and per-run effects.",
+    pageIds: ["fixed-search-for-the-needle-classes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "classes-roll-cost",
+    question: "How much does a class roll cost in Search For The Needle?",
+    answer:
+      "Each class roll costs 40 Gems at the Classes booth in the lobby near spawn. The 8-day login track grants 880 Gems total (about 22 rolls), plus +25 Gems each for liking the game and joining the official creator group.",
+    pageIds: ["fixed-search-for-the-needle-classes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "classes-best-early",
+    question: "Which class is the best for new players in Search For The Needle?",
+    answer:
+      "Pack Mule is the best early target at a 25% roll chance — carry capacity +50% in every bag directly fixes the carry-capacity bottleneck new players face. Hay Merchant (14%) is the next-best pick if your bottleneck is selling-hay income.",
+    pageIds: ["fixed-search-for-the-needle-classes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "classes-pity-system",
+    question: "Is there a pity system for Search For The Needle class rolls?",
+    answer:
+      "Not documented. Each roll has the same fixed odds regardless of roll history — there is no documented pity counter that guarantees a rare class after N rolls. Ultimate Farmer at 0.1% averages about 1 roll in 1,000 (about 40,000 Gems per pull).",
+    pageIds: ["fixed-search-for-the-needle-classes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "classes-where-roll",
+    question: "Where do I roll for a class in Search For The Needle?",
+    answer:
+      "Rolls are taken at the Classes booth in the lobby near spawn. Each roll costs 40 Gems and grants one of the eight classes for that run; the class persists for the run and applies its per-run bonus while you play.",
+    pageIds: ["fixed-search-for-the-needle-classes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
   // /tips FAQs
   {
     id: "tips-fastest-way",

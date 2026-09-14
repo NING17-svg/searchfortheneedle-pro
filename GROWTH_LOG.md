@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-15 - Chapter 2 Basement and Classes pages added
+
+- Task: Add `/chapter-2-basement` (Place 83445806734780 walkthrough: Basement Key, 3 Levers, 3 Puzzles, laser gate, UFO escape, +25 Gems reward + Chapter 3 teaser) and `/classes` (8 rollable classes with roll chances, per-run effects, 40 Gems per roll, 880 Gems 8-day login track).
+- Files changed: `src/data/pages/content-pages.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `src/data/navigation.ts`, `CONTENT_INDEX.md`.
+- URLs affected: Added `/chapter-2-basement` and `/classes`; added hub links from `/`, `/how-to-play`, and `/updates`; added both pages to primary navigation.
+- SEO/GEO changed: Two new fixed pages, two new FAQ blocks (5 items each), broader internal-link coverage from home and hub pages.
+- Browser baseline: No theme, asset, page-shell, or guide-module changes.
+- Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.

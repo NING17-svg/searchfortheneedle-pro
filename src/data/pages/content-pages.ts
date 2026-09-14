@@ -140,6 +140,8 @@ export const contentPages: PageContent[] = [
         "Open the official Roblox game page, load the haystack area, and start the search-and-find loop. Beat your best time round after round.",
       ctas: [
         { label: "Haystack locations", href: "/locations" },
+        { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
+        { label: "Classes", href: "/classes" },
         { label: "Tips", href: "/tips" },
       ],
     },
@@ -240,6 +242,8 @@ export const contentPages: PageContent[] = [
       "fixed-search-for-the-needle-locations-en-US",
       "fixed-search-for-the-needle-codes-en-US",
       "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-chapter-2-basement-en-US",
+      "fixed-search-for-the-needle-classes-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
@@ -369,6 +373,7 @@ export const contentPages: PageContent[] = [
         "Track the latest Search For The Needle build timestamp from the Roblox Games API and what Garage Games has or has not confirmed.",
       ctas: [
         { label: "Active codes", href: "/codes" },
+        { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
         { label: "Haystack locations", href: "/locations" },
       ],
     },
@@ -468,6 +473,7 @@ export const contentPages: PageContent[] = [
     relatedPageIds: [
       "fixed-search-for-the-needle-codes-en-US",
       "fixed-search-for-the-needle-locations-en-US",
+      "fixed-search-for-the-needle-chapter-2-basement-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
@@ -580,6 +586,355 @@ export const contentPages: PageContent[] = [
     relatedPageIds: [
       "fixed-search-for-the-needle-how-to-play-en-US",
       "fixed-search-for-the-needle-locations-en-US",
+      "fixed-search-for-the-needle-updates-en-US",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-14",
+  },
+  {
+    id: "fixed-search-for-the-needle-chapter-2-basement-en-US",
+    translationKey: "search-for-the-needle-chapter-2-basement",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "chapter-2-basement",
+    url: "/chapter-2-basement",
+    pageType: "guides",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Chapter 2 Basement walkthrough — Key, 3 Levers, 3 Puzzles, UFO escape",
+    seoTitle: "Search For The Needle Chapter 2 Basement walkthrough",
+    metaDescription:
+      "Chapter 2 Basement walkthrough for Place ID 83445806734780: find the Basement Key, pull the Green/Red/Purple Levers, solve the crystal/code/picture Puzzles, disable the laser gate, escape the UFO, and earn +25 Gems plus the Chapter 3 teaser.",
+    summary:
+      "Complete Chapter 2 (Place 83445806734780) by grabbing the Basement Key, pulling all three Levers, solving all three Puzzles, disabling the red lasers, and reaching the UFO for +25 Gems.",
+    hero: {
+      eyebrow: "Chapter 2",
+      subtitle:
+        "Find the Basement Key, pull all three Levers, solve the three Puzzles, drop the red lasers, and reach the UFO for +25 Gems.",
+      ctas: [
+        { label: "How to play", href: "/how-to-play" },
+        { label: "Updates", href: "/updates" },
+      ],
+    },
+    quickAnswer:
+      "Chapter 2 (Place ID 83445806734780, launched 2026-09-05) rewards +25 Gems and a Chapter 3 teaser on completion. The run has three objectives in order: find the Basement Key in the haystack, pull all three Levers (Green near the boxes, Red near the Sell Hay cart, Purple beside the Alien's Jail), then solve the three Puzzles (Crystal, Code, Picture) inside the secret room. Solving the Puzzles drops the red laser traps blocking the ladder; equip the Key and climb to the Basement door to trigger the UFO cutscene.",
+    keyFacts: [
+      { label: "Place ID", value: "83445806734780" },
+      { label: "Launched", value: "2026-09-05" },
+      { label: "Reward", value: "+25 Gems + Chapter 3 teaser" },
+      { label: "Badge", value: "Finished Chapter 2!" },
+      { label: "Objectives", value: "Key + 3 Levers + 3 Puzzles + escape" },
+    ],
+    modules: [
+      {
+        id: "ch2-step-1",
+        type: "steps",
+        heading: "Step 1 — Find the Basement Key in the haystack",
+        items: [
+          {
+            title: "Load Chapter 2",
+            body: "Launch Place ID 83445806734720 from the official Search For The Needle Roblox game page so the Chapter 2 area spawns you in the haystack environment.",
+            doneCondition: "Your character is standing in the Chapter 2 haystack search area, not the original Chapter 1 area.",
+          },
+          {
+            title: "Hunt the Key the same way you hunt the needle",
+            body: "The Basement Key is hidden inside the haystack just like the needle, but it is rarer. Bring Dynamite or the Vacuum — both clear bulk hay the fastest and surface the Key faster than manual searching.",
+            doneCondition: "The Basement Key is in your inventory before you finish the haystack sweep.",
+          },
+          {
+            title: "Hold on to the Key",
+            body: "Keep the Key equipped — the basement trapdoor will not open unless you are carrying the Key when you reach the ladder.",
+            doneCondition: "The Key icon stays visible in your active item slot.",
+          },
+        ],
+      },
+      {
+        id: "ch2-levers",
+        type: "data-table",
+        heading: "Step 2 — Pull the three Levers in any order",
+        columns: [
+          { key: "lever", label: "Lever" },
+          { key: "location", label: "Where it is" },
+          { key: "hint", label: "Directional hint" },
+        ],
+        rows: [
+          {
+            lever: "Green Lever",
+            location: "Behind the haystack near the boxes",
+            hint: "Circle the haystack from the rear; look for the green wall plate on the stack of crates.",
+          },
+          {
+            lever: "Red Lever",
+            location: "Near the Sell Hay cart, behind the board",
+            hint: "Walk past the Sell Hay NPC and look at the board behind the cart — the red lever is mounted on the back side.",
+          },
+          {
+            lever: "Purple Lever",
+            location: "Beside the Alien's Jail",
+            hint: "Find the Alien's Jail cell on the upper level and check the wall right next to the bars — the purple lever sits there.",
+          },
+        ],
+      },
+      {
+        id: "ch2-puzzles",
+        type: "data-table",
+        heading: "Step 3 — Solve the three Puzzles in the secret room",
+        columns: [
+          { key: "puzzle", label: "Puzzle" },
+          { key: "what-you-see", label: "What you see" },
+          { key: "how-to-solve", label: "How to solve it" },
+        ],
+        rows: [
+          {
+            puzzle: "Crystal Puzzle",
+            "what-you-see": "Crystal tiles embedded in the secret-room walls in red, green, and purple.",
+            "how-to-solve":
+              "Count each colour of crystal in the walls and enter the three numbers in the matching order on the puzzle console.",
+          },
+          {
+            puzzle: "Code Puzzle",
+            "what-you-see": "A keypad console and scattered papers around the map.",
+            "how-to-solve":
+              "Read the digits written on the papers scattered around the Chapter 2 map and enter them on the keypad in the order the papers spell out.",
+          },
+          {
+            puzzle: "Picture Puzzle",
+            "what-you-see": "A 16-piece scrambled picture on a board.",
+            "how-to-solve":
+              "Slide the 16 picture tiles until the full image assembles correctly — the puzzle clicks into place and the console confirms the solve.",
+          },
+        ],
+      },
+      {
+        id: "ch2-lasers",
+        type: "prose",
+        heading: "Step 4 — Disable the red lasers and escape",
+        body: "Solving all three Puzzles drops the red laser traps that block the ladder up to the Basement door. Equip the Basement Key, climb the ladder, and reach the trapdoor at the top — the Key opens the trapdoor; the lasers only stop you reaching it. Once the trapdoor opens, a cutscene plays where the freed Alien points at a UFO, and Chapter 2 completes with the +25 Gems reward, the Finished Chapter 2! badge, and a Chapter 3 teaser.",
+        links: [
+          { label: "How to play the haystack loop", href: "/how-to-play" },
+          { label: "Latest patch status", href: "/updates" },
+        ],
+      },
+      {
+        id: "ch2-failures",
+        type: "recipes",
+        heading: "Common failure and how to recover",
+        items: [
+          {
+            name: "Key found but trapdoor will not open",
+            inputs: ["Key icon visible", "Standing at the trapdoor"],
+            output: "Trapdoor opens, escape route enabled",
+            note:
+              "If the Key is in your inventory but the trapdoor still rejects you, you probably crossed the laser line after the puzzles solved but before re-equipping the Key. Walk back down the ladder, re-equip the Key from the active item slot, and climb again.",
+          },
+          {
+            name: "A lever will not register",
+            inputs: ["Lever pulled", "No sound or animation feedback"],
+            output: "Lever flips and the secret room door opens",
+            note:
+              "All three Levers can be pulled in any order — the secret room opens once all three are down. If a lever will not register, re-approach it from the front and pull again; some lever collision boxes only accept input when you face them.",
+          },
+          {
+            name: "Stuck on a Puzzle",
+            inputs: ["All three Lever pulls confirmed", "Puzzle console not accepting input"],
+            output: "Puzzle console accepts input",
+            note:
+              "The three Puzzles each open a separate console in the secret room. If a console will not accept your input, confirm you are inside the secret room and that all three Levers are pulled; the consoles stay locked until all three are down.",
+          },
+        ],
+      },
+    ],
+    faqIds: [
+      "ch2-where-find-key",
+      "ch2-lever-order",
+      "ch2-puzzle-help",
+      "ch2-reward",
+      "ch2-chapter-3",
+    ],
+    relatedPageIds: [
+      "fixed-search-for-the-needle-how-to-play-en-US",
+      "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-tips-en-US",
+      "fixed-search-for-the-needle-locations-en-US",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-14",
+  },
+  {
+    id: "fixed-search-for-the-needle-classes-en-US",
+    translationKey: "search-for-the-needle-classes",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "classes",
+    url: "/classes",
+    pageType: "guides",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Classes — 8 rollable classes, roll chances, and per-run effects",
+    seoTitle: "Search For The Needle classes — roll chances and per-run effects",
+    metaDescription:
+      "The 8 Search For The Needle classes (Starter, Pack Mule, Hay Merchant, Forkmaster, Demolitionist, Prospector, Drone Specialist, Ultimate Farmer), their roll chances, per-run effects, the 40 Gems per roll cost, and the 880 Gems 8-day login track.",
+    summary:
+      "Every rollable class, the chance to roll it, what each class does during a run, and how to plan 40-Gem rolls against the 880-Gem login track.",
+    hero: {
+      eyebrow: "Classes",
+      subtitle:
+        "Eight rollable classes, their roll chances, what each class does per run, and how to plan rolls against the 40 Gems per roll cost.",
+      ctas: [
+        { label: "How to play", href: "/how-to-play" },
+        { label: "Tips", href: "/tips" },
+      ],
+    },
+    quickAnswer:
+      "Class rolls cost 40 Gems each at the Classes booth in the lobby near spawn. There are eight rollable classes with the following roll chances and per-run effects: Starter (40%), Pack Mule (25%), Hay Merchant (14%), Forkmaster (9%), Demolitionist (7%), Prospector (3.9%), Drone Specialist (1%), and Ultimate Farmer (0.1%). The 8-day login track grants 880 Gems total — about 22 rolls — and the +25 Gem like-the-game and join-the-group one-offs stack on top.",
+    keyFacts: [
+      { label: "Roll cost", value: "40 Gems per roll" },
+      { label: "Rolls per login cycle", value: "≈22 (880 Gems ÷ 40)" },
+      { label: "Number of classes", value: "8" },
+      { label: "Pity system", value: "Not documented" },
+      { label: "Where to roll", value: "Classes booth, lobby near spawn" },
+    ],
+    modules: [
+      {
+        id: "classes-how-rolling-works",
+        type: "prose",
+        heading: "How class rolling works",
+        body: "Class rolling is a gacha-style system: you spend 40 Gems per roll at the Classes booth in the lobby near spawn, and each roll gives you one of eight classes for the run. The class persists for that run and applies its per-run bonus while you play. Roll chances are fixed across rolls — there is no documented pity system, so each roll has the same odds regardless of how many times you have already rolled.",
+        links: [
+          { label: "Haystack search tips", href: "/tips" },
+          { label: "How to play the haystack loop", href: "/how-to-play" },
+        ],
+      },
+      {
+        id: "classes-table",
+        type: "data-table",
+        heading: "All 8 classes — roll chance and per-run effect",
+        columns: [
+          { key: "class", label: "Class" },
+          { key: "chance", label: "Roll chance" },
+          { key: "effect", label: "Per-run effect" },
+        ],
+        rows: [
+          {
+            class: "Starter",
+            chance: "40%",
+            effect: "Default class — no bonuses.",
+          },
+          {
+            class: "Pack Mule",
+            chance: "25%",
+            effect:
+              "Carry capacity +50% in every bag — every hay bag you fill holds 50% more hay.",
+          },
+          {
+            class: "Hay Merchant",
+            chance: "14%",
+            effect:
+              "Money from selling hay +20% — every hay sell pays more.",
+          },
+          {
+            class: "Forkmaster",
+            chance: "9%",
+            effect:
+              "Pitchfork swings collect 25% more hay; Pitchfork upgrades cost 25% less.",
+          },
+          {
+            class: "Demolitionist",
+            chance: "7%",
+            effect:
+              "Dynamite blast radius +20%; 10% chance a TNT splits into three mini-charges.",
+          },
+          {
+            class: "Prospector",
+            chance: "3.9%",
+            effect:
+              "Diamonds appear 50% more often; hay can transform into Diamonds.",
+          },
+          {
+            class: "Drone Specialist",
+            chance: "1%",
+            effect:
+              "Always own a Drone; Drone flies 30% faster, carries 40% more hay; occasional three-drone swarm.",
+          },
+          {
+            class: "Ultimate Farmer",
+            chance: "0.1%",
+            effect:
+              "Stacks every other class's bonus; periodically triggers Golden Harvest. Expect roughly 1 roll in 1,000 — about 40,000 Gems per pull on average.",
+          },
+        ],
+      },
+      {
+        id: "classes-recommend",
+        type: "prose",
+        heading: "Which class is worth chasing",
+        body: "Pack Mule is the best early target: it is the second-most common roll (25%) and it directly fixes the carry-capacity bottleneck new players face when they outgrow their starter bags. Hay Merchant (14%) is the next step if your bottleneck is selling-hay income rather than carry capacity. Forkmaster (9%) and Demolitionist (7%) reward players who already own the matching tool upgrades. Prospector (3.9%) and Drone Specialist (1%) are end-game goals that pay off when you have the inventory and tool tier to take advantage of them. Ultimate Farmer (0.1%) is a chase, not a plan — expect about 40,000 Gems of rolling per pull on average.",
+      },
+      {
+        id: "classes-roll-budget",
+        type: "data-table",
+        heading: "Roll budget against the 8-day login track",
+        columns: [
+          { key: "day", label: "Day" },
+          { key: "gems", label: "Gems earned" },
+          { key: "rolls", label: "Rolls unlocked" },
+        ],
+        rows: [
+          { day: "Day 1", gems: "+10", rolls: "0.25" },
+          { day: "Day 2", gems: "+120", rolls: "3.0" },
+          { day: "Day 3", gems: "+50", rolls: "1.25" },
+          { day: "Day 4", gems: "+50", rolls: "1.25" },
+          { day: "Day 5", gems: "+50", rolls: "1.25" },
+          { day: "Day 6", gems: "+50", rolls: "1.25" },
+          { day: "Day 7", gems: "+50", rolls: "1.25" },
+          { day: "Day 8", gems: "+500", rolls: "12.5" },
+          {
+            day: "8-day total",
+            gems: "+880",
+            rolls: "≈22 rolls (rounded down)",
+          },
+        ],
+      },
+      {
+        id: "classes-extra-gems",
+        type: "prose",
+        heading: "One-off +25 Gem sources on top of the login track",
+        body: "Two one-off +25 Gem grants stack on top of the 880-Gem 8-day login track: liking the official game and joining the official creator group each grant +25 Gems. Combined, that adds +50 Gems — roughly one extra roll per account, before any login-track reset.",
+      },
+      {
+        id: "classes-decision",
+        type: "steps",
+        heading: "Recommended roll decision rule",
+        items: [
+          {
+            title: "Confirm you have Gems to spend",
+            body: "Before walking to the Classes booth, confirm you have at least 40 Gems in your balance. If you are saving for a Chapter 2 run, do not spend on a roll you cannot afford to lose to the 40% Starter outcome.",
+          },
+          {
+            title: "Roll once first to test your target class",
+            body: "Spend one roll to see what you pull. If you hit your target class, you can stop; if you land on Starter (40%) or a class you did not want, you now know the cost of a re-roll.",
+          },
+          {
+            title: "Plan around the login cycle",
+            body: "Each 8-day login cycle grants 880 Gems. Plan rolls at the end of a cycle so a bad-luck streak does not burn the next cycle's gems before they land.",
+          },
+          {
+            title: "Stop on the class you came for",
+            body: "There is no documented pity system, so chasing Ultimate Farmer or Drone Specialist by raw volume will burn through hundreds of Gems. Set a target class, roll until you hit it, then stop until the next cycle.",
+          },
+        ],
+      },
+    ],
+    faqIds: [
+      "classes-how-many",
+      "classes-roll-cost",
+      "classes-best-early",
+      "classes-pity-system",
+      "classes-where-roll",
+    ],
+    relatedPageIds: [
+      "fixed-search-for-the-needle-how-to-play-en-US",
+      "fixed-search-for-the-needle-tips-en-US",
       "fixed-search-for-the-needle-updates-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],

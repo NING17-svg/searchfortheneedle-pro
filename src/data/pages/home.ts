@@ -72,6 +72,16 @@ export const homePage: PageContent = {
           href: "/how-to-play",
         },
         {
+          title: "Chapter 2 Basement",
+          summary: "Walkthrough for Place 83445806734780 — Key, 3 Levers, 3 Puzzles, UFO escape, +25 Gems.",
+          href: "/chapter-2-basement",
+        },
+        {
+          title: "Classes",
+          summary: "All 8 rollable classes, their roll chances, and per-run effects before you spend 40 Gems.",
+          href: "/classes",
+        },
+        {
           title: "Haystack locations",
           summary: "Officially documented haystack areas and what is Not announced as of 2026-09-14.",
           href: "/locations",
@@ -96,6 +106,8 @@ export const homePage: PageContent = {
       links: [
         { label: "Active codes", href: "/codes" },
         { label: "How to play", href: "/how-to-play" },
+        { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
+        { label: "Classes", href: "/classes" },
         { label: "Haystack locations", href: "/locations" },
         { label: "Updates", href: "/updates" },
         { label: "Tips", href: "/tips" },
@@ -106,6 +118,8 @@ export const homePage: PageContent = {
   relatedPageIds: [
     "fixed-search-for-the-needle-codes-en-US",
     "fixed-search-for-the-needle-how-to-play-en-US",
+    "fixed-search-for-the-needle-chapter-2-basement-en-US",
+    "fixed-search-for-the-needle-classes-en-US",
     "fixed-search-for-the-needle-locations-en-US",
     "fixed-search-for-the-needle-updates-en-US",
     "fixed-search-for-the-needle-tips-en-US",

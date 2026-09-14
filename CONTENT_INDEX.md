@@ -12,13 +12,17 @@ hreflang, sitemap, and route-manifest validation.
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Landing | Template Game guide | Find the best entry point | Open Wiki / Browse Guides | Hub | Replace with the configured game's main hub intent. |
-| `/wiki` | `src/data/pages/wiki-pages.ts` | Guide | Template Game wiki | Understand confirmed facts | Guides / FAQ | Hub | Keep official fact base and source context here. |
-| `/guides` | `src/data/pages/guide-pages.ts` | Guide | Template Game guides | Find guide topics before launch | Wiki / Release Info | Hub | Do not invent walkthroughs before reliable details exist. |
-| `/release-date` | `src/data/pages/release-pages.ts` | Guide | Template Game release date | Check release timing and platforms | FAQ / Wiki | Supporting hub | Must stay tied to official or store sources. |
-| `/faq` | `src/data/pages/site-pages.ts` | Guide | Template Game FAQ | Get short answers | Release Info / Contact | Answer hub | FAQ schema enabled. |
-| `/about` | `src/data/pages/site-pages.ts` | Utility | about Template Game Guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
-| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
+| `/` | `src/data/pages/home.ts` | Landing | Search For The Needle guide | Find the best entry point | Play on Roblox / How to play | Hub | Hub linking to every active guide. |
+| `/codes` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle codes | Track active codes | How to play / Updates | Supporting hub | Dated status; no active codes as of 2026-09-14. |
+| `/how-to-play` | `src/data/pages/content-pages.ts` | Guide | how to play Search For The Needle | First-join walkthrough | Locations / Chapter 2 / Classes / Tips | Hub | Anchors the haystack search loop. |
+| `/chapter-2-basement` | `src/data/pages/content-pages.ts` | Guide | Chapter 2 Basement walkthrough | Complete Place 83445806734780 | How to play / Updates | Supporting hub | Key, 3 Levers, 3 Puzzles, UFO escape. |
+| `/classes` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle classes | Plan 40-Gem class rolls | How to play / Tips | Supporting hub | 8 rollable classes with chances and effects. |
+| `/locations` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle haystack locations | Reference haystack areas | How to play / Tips | Supporting hub | Single documented haystack area. |
+| `/updates` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle updates | Check latest patch status | Codes / Chapter 2 / Locations | Supporting hub | Last build 2026-09-13. |
+| `/tips` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle tips | Faster haystack finds | How to play / Locations | Supporting hub | Strategy tips for the haystack loop. |
+| `/faq` | `src/data/pages/site-pages.ts` | Guide | Search For The Needle FAQ | Get short answers | About / Contact | Answer hub | FAQ schema enabled. |
+| `/about` | `src/data/pages/site-pages.ts` | Utility | about Search For The Needle guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
+| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Search For The Needle guide | Corrections and source updates | About | Trust | support@searchfortheneedle.pro |
 | `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
 | `/terms` | `src/data/pages/site-pages.ts` | Legal | terms of use | Site use expectations | Privacy Policy | Trust | Keep unofficial disclaimer clear. |
 
@@ -31,18 +35,20 @@ hreflang, sitemap, and route-manifest validation.
 
 ## Content Clusters
 
-- Launch facts: `/release-date`, `/faq`
-- Official facts and safe guide structure: `/wiki`, `/guides`
+- Launch facts: `/updates`, `/faq`
+- Player progression: `/how-to-play`, `/chapter-2-basement`, `/classes`, `/tips`, `/locations`
+- Codes: `/codes`
 - Evergreen hub and trust: `/`, `/about`, `/contact`, `/privacy-policy`, `/terms`
 
 ## Internal Linking Map
 
 - Homepage should link to the most current high-demand pages.
-- Wiki should link to guide and release pages.
-- Guides should link to wiki and release pages.
-- Release Date should link to FAQ and official sources.
+- How to play should link to Chapter 2, Classes, Locations, and Tips.
+- Chapter 2 should link to How to play and Updates.
+- Classes should link to How to play and Tips.
+- Updates should link to Codes, Chapter 2, and Locations.
 - FAQ should include all current high-demand answer pages.
 
 ## Open Questions
 
-- Replace this section with game-specific unknowns during content configuration.
+- Add a dedicated `/currencies` page when Garage Games formally publishes the Gems economy (login track, one-offs, and the 40-Gem roll cost) on the official game page.
