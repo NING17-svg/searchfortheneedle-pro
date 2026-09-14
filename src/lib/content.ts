@@ -25,7 +25,10 @@ const pages: PageContent[] = [
   ...buildEntityPages(entityFamilies),
 ];
 
-const publicPages: PageContent[] = fixedPages;
+const publicPages: PageContent[] = [
+  ...fixedPages,
+  ...fixturePages,
+];
 
 export interface FinalRouteManifestEntry {
   id: string;

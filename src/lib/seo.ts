@@ -18,10 +18,12 @@ export function metadataForPage(
   const alternateLocale = Object.keys(routeAlternates)
     .filter((locale) => locale !== page.locale)
     .map((locale) => getLocaleConfig(locale).openGraphLocale);
+  const isFixture = page.routeKind === "entity-hub" && page.url.includes("__");
 
   return {
     title: page.seoTitle,
     description: page.metaDescription,
+    robots: isFixture ? { index: false, follow: false } : undefined,
     alternates: {
       canonical: absoluteUrl(page.url),
       languages: {
