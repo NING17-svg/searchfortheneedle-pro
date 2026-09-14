@@ -1,26 +1,31 @@
 import type { FAQItem, PageContent, RouteKind } from "@/types/content";
 import { entityFamilies } from "@/data/entities";
 import { faqItems } from "@/data/faq";
-import { guidePages } from "@/data/pages/guide-pages";
 import { homePage } from "@/data/pages/home";
-import { releasePages } from "@/data/pages/release-pages";
+import { contentPages } from "@/data/pages/content-pages";
 import { sitePages } from "@/data/pages/site-pages";
-import { wikiPages } from "@/data/pages/wiki-pages";
 import { buildEntityPages } from "@/lib/entities";
 import { normalizePath } from "@/lib/localization";
 
 const fixedPages: PageContent[] = [
   homePage,
-  ...wikiPages,
-  ...guidePages,
-  ...releasePages,
+  ...contentPages.filter(
+    (page) => page.id !== "guides" && page.id !== "wiki",
+  ),
   ...sitePages,
 ];
 
+const fixturePages: PageContent[] = contentPages.filter(
+  (page) => page.id === "guides" || page.id === "wiki",
+);
+
 const pages: PageContent[] = [
   ...fixedPages,
+  ...fixturePages,
   ...buildEntityPages(entityFamilies),
 ];
+
+const publicPages: PageContent[] = fixedPages;
 
 export interface FinalRouteManifestEntry {
   id: string;
@@ -37,6 +42,10 @@ export function getAllPages(): PageContent[] {
 
 export function getIndexablePages(): PageContent[] {
   return pages;
+}
+
+export function getPublicPages(): PageContent[] {
+  return publicPages;
 }
 
 export function getPageByUrl(url: string): PageContent | undefined {

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "home-en-US",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides",
+    "locale": "en-US",
+    "routeKind": "entity-hub",
+    "url": "/__guides-fixture",
+    "alternates": {
+      "en-US": "/__guides-fixture"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "entity-hub",
+    "url": "/__wiki-fixture",
+    "alternates": {
+      "en-US": "/__wiki-fixture"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "fixed-search-for-the-needle-codes-en-US",
+    "translationKey": "search-for-the-needle-codes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/codes",
+    "alternates": {
+      "en-US": "/codes"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "fixed-search-for-the-needle-how-to-play-en-US",
+    "translationKey": "search-for-the-needle-how-to-play",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/how-to-play",
+    "alternates": {
+      "en-US": "/how-to-play"
+    }
+  },
+  {
+    "id": "fixed-search-for-the-needle-locations-en-US",
+    "translationKey": "search-for-the-needle-locations",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/locations",
+    "alternates": {
+      "en-US": "/locations"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "fixed-search-for-the-needle-tips-en-US",
+    "translationKey": "search-for-the-needle-tips",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/tips",
+    "alternates": {
+      "en-US": "/tips"
+    }
+  },
+  {
+    "id": "fixed-search-for-the-needle-updates-en-US",
+    "translationKey": "search-for-the-needle-updates",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/updates",
+    "alternates": {
+      "en-US": "/updates"
+    }
+  }
+]

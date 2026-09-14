@@ -6,10 +6,11 @@ export interface LocalizedNavigationItem {
 }
 
 export const primaryNavigation: LocalizedNavigationItem[] = [
-  { href: "/wiki", labels: { "en-US": "Wiki" } },
-  { href: "/guides", labels: { "en-US": "Guides" } },
-  { href: "/release-date", labels: { "en-US": "Release Date" } },
-  { href: "/faq", labels: { "en-US": "FAQ" } },
+  { href: "/codes", labels: { "en-US": "Codes" } },
+  { href: "/how-to-play", labels: { "en-US": "How to Play" } },
+  { href: "/locations", labels: { "en-US": "Locations" } },
+  { href: "/updates", labels: { "en-US": "Updates" } },
+  { href: "/tips", labels: { "en-US": "Tips" } },
 ];
 
 export const footerNavigation: LocalizedNavigationItem[] = [
