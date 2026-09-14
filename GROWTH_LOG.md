@@ -32,3 +32,11 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Content changed: Neutral placeholder content only.
 - Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted.
 - Follow-up: Replace this entry with a real launch/configuration entry when the one-click builder fills the site for a specific game.
+
+### 2026-09-14 - Adsterra six-unit integration activated
+
+- Task: Replace the empty Adsterra placeholders in `src/data/ads.ts` with the fixed Native Banner, 728x90, 468x60, 320x50, 160x600, and Smartlink codes collected for searchfortheneedle.pro.
+- Files changed: `src/data/ads.ts`.
+- URLs affected: No URL changes; only the existing fixed ad module containers are now wired to real Adsterra placements.
+- Ad baseline: Six fixed ad units are populated and active; component shell, page positions, and theme are unchanged.
+- Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
