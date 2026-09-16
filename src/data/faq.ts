@@ -325,6 +325,110 @@ export const faqItems: FAQItem[] = [
     sourceStatus: "official",
   },
 
+  // /gamepasses FAQs
+  {
+    id: "gamepasses-how-many",
+    question: "How many gamepasses does Search For The Needle have?",
+    answer:
+      "Nine gamepasses and dev products are live after the 2026-09-15 build: 2x Gems 79 R$, Permanent Bag 99 R$, Permanent Pitchfork 99 R$, Permanent Drone 129 R$, Permanent Dynamite 149 R$, Fast Rolls 179 R$, 2x Class Luck 199 R$, Permanent Vacuum 249 R$, and Cow Pet 499 R$. The catalogue moved from 8 to 9 passes with the 2026-09-15 build, which is why older pages on this site still describe an 8-pass environment.",
+    pageIds: ["fixed-search-for-the-needle-gamepasses-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "gamepasses-cheapest-worth-it",
+    question: "Which Search For The Needle gamepass is the cheapest one worth buying?",
+    answer:
+      "Permanent Infinite Bag at 99 R$ is the cheapest pass that fixes a daily-play bottleneck. It adds +50% carry capacity to every bag slot, which stops you from running back to sell mid-sweep. The next-cheapest pass worth buying is 2x Class Luck at 199 R$ if you spend 40 Gems on class rolls regularly.",
+    pageIds: ["fixed-search-for-the-needle-gamepasses-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "gamepasses-2x-class-luck",
+    question: "What does the 2x Class Luck gamepass do in Search For The Needle?",
+    answer:
+      "2x Class Luck (199 R$, added 2026-09-15) doubles the chance of pulling any non-Starter class at the Classes booth. The official catalogue has not published an exact multiplier, so treat the benefit as roughly halving your expected rolls to a target class. If you do not roll classes regularly, the pass has limited value for your account.",
+    pageIds: ["fixed-search-for-the-needle-gamepasses-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "gamepasses-first-buy",
+    question: "Which Search For The Needle gamepass should I buy first?",
+    answer:
+      "Buy Permanent Infinite Bag first (99 R$) for the carry-capacity fix. If you roll classes, buy 2x Class Luck second (199 R$). Once you reach Chapter 2, buy Permanent Drone (129 R$) or Permanent Vacuum (249 R$) for the Basement Key hunt. Skip the Cow Pet (499 R$) until you already own the cheaper upgrades.",
+    pageIds: ["fixed-search-for-the-needle-gamepasses-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "gamepasses-cow-pet",
+    question: "Is the Cow Pet gamepass worth 499 R$ in Search For The Needle?",
+    answer:
+      "The Cow Pet (499 R$) is a direct-purchase alternative to the Dog Pet (1,000 Gems). For most players the Permanent Bag + 2x Class Luck combination outperforms the Cow Pet on per-Robux value until Chapter 2 is finished, so buy the Cow Pet only after you already own the cheaper upgrades.",
+    pageIds: ["fixed-search-for-the-needle-gamepasses-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /pets FAQs
+  {
+    id: "pets-dog-or-cow",
+    question: "Should I buy the Dog Pet or the Cow Pet in Search For The Needle?",
+    answer:
+      "Pick the Dog Pet (1,000 Gems) if you roll classes regularly — the 8-day 880-Gem login track nearly funds it. Pick the Cow Pet (499 R$) if you would rather spend Robux than your roll budget. Both pets auto-collect hay during the haystack search loop; the decision is purely about which currency you want to spend.",
+    pageIds: ["fixed-search-for-the-needle-pets-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "pets-cow-pass-cost",
+    question: "How much Robux does the Cow Pet gamepass cost in Search For The Needle?",
+    answer:
+      "The Cow Pet gamepass costs 499 R$ and was added in the 2026-09-15 build. It is a one-time Robux purchase; the Dog Pet remains the free-track alternative at 1,000 Gems.",
+    pageIds: ["fixed-search-for-the-needle-pets-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "pets-cosmetics-restock",
+    question: "How often does the Pet Cosmetics stand restock in Search For The Needle?",
+    answer:
+      "The Pet Cosmetics stand restocks every hour. The current rarity weights are Common 40%, Uncommon 30%, Rare 18%, Epic 9%, Legendary 3%. Log in on the hour for the freshest pool.",
+    pageIds: ["fixed-search-for-the-needle-pets-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "pets-index-rewards",
+    question: "What are the Index completion rewards in Search For The Needle?",
+    answer:
+      "Not announced as of 2026-09-17. The Index is a collection log introduced on 2026-09-12, but Garage Games has not published the completion rewards, the number of tracks, or the indexed-item list. Any specific reward table you see in third-party guides is community-attributed until Garage Games confirms it.",
+    pageIds: ["fixed-search-for-the-needle-pets-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "pets-when-introduced",
+    question: "When did Pets and the Index launch in Search For The Needle?",
+    answer:
+      "Pets, Pet Cosmetics, and the Index collection log launched together in the 2026-09-12 Index + Pets event. The Cow Pet gamepass and the 2x Class Luck gamepass were added three days later in the 2026-09-15 build.",
+    pageIds: ["fixed-search-for-the-needle-pets-en-US"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
   // /tips FAQs
   {
     id: "tips-fastest-way",

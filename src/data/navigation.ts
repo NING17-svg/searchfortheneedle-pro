@@ -10,6 +10,8 @@ export const primaryNavigation: LocalizedNavigationItem[] = [
   { href: "/how-to-play", labels: { "en-US": "How to Play" } },
   { href: "/chapter-2-basement", labels: { "en-US": "Chapter 2" } },
   { href: "/classes", labels: { "en-US": "Classes" } },
+  { href: "/gamepasses", labels: { "en-US": "Gamepasses" } },
+  { href: "/pets", labels: { "en-US": "Pets" } },
   { href: "/locations", labels: { "en-US": "Locations" } },
   { href: "/updates", labels: { "en-US": "Updates" } },
   { href: "/tips", labels: { "en-US": "Tips" } },

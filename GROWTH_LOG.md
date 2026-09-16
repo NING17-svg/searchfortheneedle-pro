@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-17 - Gamepasses (9-pass catalogue) and Pets + Index pages added
+
+- Task: Add `/gamepasses` (all 9 gamepasses/dev products with price, effect, creation date, and a recommended first-buy order — Permanent Bag, then 2X Class Luck, then Permanent Drone/Vacuum) and `/pets` (Dog 1,000 Gems vs Cow 499 R$, Pet Cosmetics 40/30/18/9/3 hourly restock, Index collection log with rewards-unknown caveat).
+- Files changed: `src/data/pages/content-pages.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `src/data/navigation.ts`, `CONTENT_INDEX.md`.
+- URLs affected: Added `/gamepasses` and `/pets`; added hub links from `/`, `/how-to-play`, `/classes`, `/codes`; added both pages to primary navigation.
+- SEO/GEO changed: Two new fixed pages, two new FAQ blocks (5 items each), broader internal-link coverage from home and hub pages. Last updated date on the homepage reflects the 2026-09-15 build (Fast Rolls, 2X Class Luck, Cow Pet, Pets + Index event).
+- Browser baseline: No theme, asset, page-shell, or guide-module changes.
+- Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
+
 ### 2026-09-15 - Chapter 2 Basement and Classes pages added
 
 - Task: Add `/chapter-2-basement` (Place 83445806734780 walkthrough: Basement Key, 3 Levers, 3 Puzzles, laser gate, UFO escape, +25 Gems reward + Chapter 3 teaser) and `/classes` (8 rollable classes with roll chances, per-run effects, 40 Gems per roll, 880 Gems 8-day login track).

@@ -29,12 +29,12 @@ export const homePage: PageContent = {
     ],
   },
   quickAnswer:
-    "Search For The Needle is a cozy Roblox haystack search game (Universe 10756011174 by Garage Games) where players search giant haystacks to find a hidden needle and beat their best time. This hub orients first-time players to active codes, haystack locations, tips, and the latest patch notes.",
+    "Search For The Needle is a cozy Roblox haystack search game (Universe 10756011174 by Garage Games) where players search giant haystacks to find a hidden needle and beat their best time. This hub orients first-time players to active codes, haystack locations, tips, the 9 gamepasses, Pets + Cosmetics, and the latest patch notes.",
   keyFacts: [
     { label: "Universe ID", value: "10756011174" },
     { label: "Place ID", value: "77108422251420" },
     { label: "Created", value: "2026-08-23" },
-    { label: "Last updated", value: "2026-09-13" },
+    { label: "Last updated", value: "2026-09-15" },
     { label: "Creator", value: "Garage Games (group id 279288859)" },
   ],
   modules: [
@@ -42,7 +42,7 @@ export const homePage: PageContent = {
       id: "home-intro",
       type: "prose",
       heading: "What Search For The Needle is right now",
-      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 13, 2026. This hub orients first-time players to active codes, haystack locations, haystack search tips, and the latest patch notes in one place.",
+      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 15, 2026. This hub orients first-time players to active codes, haystack locations, haystack search tips, the 9 gamepasses, Pets + Cosmetics, and the latest patch notes in one place.",
       links: [
         {
           label: "Official Search For The Needle Roblox game page",
@@ -82,6 +82,16 @@ export const homePage: PageContent = {
           href: "/classes",
         },
         {
+          title: "Gamepasses",
+          summary: "All 9 gamepasses and dev products with price, effect, and a recommended first-buy order.",
+          href: "/gamepasses",
+        },
+        {
+          title: "Pets + Index",
+          summary: "Dog vs Cow, Pet Cosmetics with hourly restock weights, and the Index collection log.",
+          href: "/pets",
+        },
+        {
           title: "Haystack locations",
           summary: "Officially documented haystack areas and what is Not announced as of 2026-09-14.",
           href: "/locations",
@@ -102,12 +112,14 @@ export const homePage: PageContent = {
       id: "home-faq",
       type: "prose",
       heading: "Frequently asked questions",
-      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-13. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status.",
+      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-15. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses.",
       links: [
         { label: "Active codes", href: "/codes" },
         { label: "How to play", href: "/how-to-play" },
         { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
         { label: "Classes", href: "/classes" },
+        { label: "Gamepasses", href: "/gamepasses" },
+        { label: "Pets + Index", href: "/pets" },
         { label: "Haystack locations", href: "/locations" },
         { label: "Updates", href: "/updates" },
         { label: "Tips", href: "/tips" },
@@ -120,13 +132,15 @@ export const homePage: PageContent = {
     "fixed-search-for-the-needle-how-to-play-en-US",
     "fixed-search-for-the-needle-chapter-2-basement-en-US",
     "fixed-search-for-the-needle-classes-en-US",
+    "fixed-search-for-the-needle-gamepasses-en-US",
+    "fixed-search-for-the-needle-pets-en-US",
     "fixed-search-for-the-needle-locations-en-US",
     "fixed-search-for-the-needle-updates-en-US",
     "fixed-search-for-the-needle-tips-en-US",
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "official",
-  lastReviewed: "2026-09-14",
+  lastReviewed: "2026-09-17",
 };
 
 export const homeSiteRef = site;

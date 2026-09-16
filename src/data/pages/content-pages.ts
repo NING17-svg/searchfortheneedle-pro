@@ -28,6 +28,7 @@ export const contentPages: PageContent[] = [
         "Track active Search For The Needle codes, the announcement channels Garage Games uses, and the standard in-game redemption flow.",
       ctas: [
         { label: "How to play", href: "/how-to-play" },
+        { label: "Pets + Index", href: "/pets" },
         { label: "Latest updates", href: "/updates" },
       ],
     },
@@ -114,6 +115,7 @@ export const contentPages: PageContent[] = [
     relatedPageIds: [
       "fixed-search-for-the-needle-how-to-play-en-US",
       "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-pets-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
@@ -142,6 +144,8 @@ export const contentPages: PageContent[] = [
         { label: "Haystack locations", href: "/locations" },
         { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
         { label: "Classes", href: "/classes" },
+        { label: "Gamepasses", href: "/gamepasses" },
+        { label: "Pets", href: "/pets" },
         { label: "Tips", href: "/tips" },
       ],
     },
@@ -244,6 +248,8 @@ export const contentPages: PageContent[] = [
       "fixed-search-for-the-needle-updates-en-US",
       "fixed-search-for-the-needle-chapter-2-basement-en-US",
       "fixed-search-for-the-needle-classes-en-US",
+      "fixed-search-for-the-needle-gamepasses-en-US",
+      "fixed-search-for-the-needle-pets-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
@@ -782,6 +788,7 @@ export const contentPages: PageContent[] = [
         "Eight rollable classes, their roll chances, what each class does per run, and how to plan rolls against the 40 Gems per roll cost.",
       ctas: [
         { label: "How to play", href: "/how-to-play" },
+        { label: "Gamepasses", href: "/gamepasses" },
         { label: "Tips", href: "/tips" },
       ],
     },
@@ -936,10 +943,390 @@ export const contentPages: PageContent[] = [
       "fixed-search-for-the-needle-how-to-play-en-US",
       "fixed-search-for-the-needle-tips-en-US",
       "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-gamepasses-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
     lastReviewed: "2026-09-14",
+  },
+  {
+    id: "fixed-search-for-the-needle-gamepasses-en-US",
+    translationKey: "search-for-the-needle-gamepasses",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "gamepasses",
+    url: "/gamepasses",
+    pageType: "guides",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Gamepasses and Dev Products — All 9 passes, prices, and effects",
+    seoTitle: "Search For The Needle gamepasses — 9 passes, prices & first-buy order",
+    metaDescription:
+      "All 9 Search For The Needle gamepasses and dev products with price, effect, and creation date: 2x Gems 79 R$, Permanent Bag 99 R$, Permanent Pitchfork 99 R$, Permanent Drone 129 R$, Permanent Dynamite 149 R$, Fast Rolls 179 R$, 2x Class Luck 199 R$, Permanent Vacuum 249 R$, Cow Pet 499 R$.",
+    summary:
+      "Every current Search For The Needle gamepass and dev product with price, effect, and a recommended first-buy order for new players.",
+    hero: {
+      eyebrow: "Gamepasses",
+      subtitle:
+        "All 9 Search For The Needle gamepasses and dev products with price, effect, and a recommended first-buy order.",
+      ctas: [
+        { label: "Classes", href: "/classes" },
+        { label: "How to play", href: "/how-to-play" },
+        { label: "Pets", href: "/pets" },
+      ],
+    },
+    quickAnswer:
+      "After the 2026-09-15 build, Search For The Needle has 9 gamepasses and dev products: 2x Gems 79 R$, Permanent Infinite Bag 99 R$, Permanent Pitchfork 99 R$, Permanent Drone 129 R$, Permanent Dynamite 149 R$, Fast Rolls 179 R$, 2x Class Luck 199 R$, Permanent Vacuum 249 R$, and Cow Pet 499 R$. Buy Permanent Bag first (99 R$), then 2x Class Luck (199 R$) if you roll classes actively, then Permanent Drone or Permanent Vacuum (129 / 249 R$) once you reach Chapter 2.",
+    keyFacts: [
+      { label: "Total passes", value: "9 (after 2026-09-15 build)" },
+      { label: "Cheapest", value: "2x Gems — 79 R$" },
+      { label: "Most expensive", value: "Cow Pet — 499 R$" },
+      { label: "Latest build", value: "2026-09-15" },
+      { label: "Creator", value: "Garage Games (group id 279288859)" },
+    ],
+    modules: [
+      {
+        id: "gamepasses-table",
+        type: "data-table",
+        heading: "All 9 gamepasses and dev products",
+        columns: [
+          { key: "pass", label: "Pass" },
+          { key: "price", label: "Price (R$)" },
+          { key: "effect", label: "Effect" },
+          { key: "created", label: "Added" },
+        ],
+        rows: [
+          {
+            pass: "2x Gems",
+            price: "79",
+            effect: "Doubles Gem earnings for the duration of the pass.",
+            created: "Initial launch",
+          },
+          {
+            pass: "Permanent Infinite Bag",
+            price: "99",
+            effect: "Carry capacity +50% permanently across every bag slot.",
+            created: "Initial launch",
+          },
+          {
+            pass: "Permanent Pitchfork",
+            price: "99",
+            effect: "Own a Pitchfork permanently; Pitchfork swings collect more hay.",
+            created: "Initial launch",
+          },
+          {
+            pass: "Permanent Drone",
+            price: "129",
+            effect: "Own a Drone permanently; Drone flies faster and carries more hay.",
+            created: "Initial launch",
+          },
+          {
+            pass: "Permanent Dynamite",
+            price: "149",
+            effect: "Own Dynamite permanently; clears bulk hay from the pile fast.",
+            created: "Initial launch",
+          },
+          {
+            pass: "Fast Rolls",
+            price: "179",
+            effect:
+              "Class rolls resolve faster at the Classes booth (effect description not yet published in the official catalogue).",
+            created: "2026-09-15",
+          },
+          {
+            pass: "2x Class Luck",
+            price: "199",
+            effect:
+              "Doubles the chance of pulling a non-Starter class at the Classes booth (effect description not yet published in the official catalogue).",
+            created: "2026-09-15",
+          },
+          {
+            pass: "Permanent Vacuum",
+            price: "249",
+            effect:
+              "Own a Vacuum permanently; vacuums bulk hay faster than manual searching.",
+            created: "Initial launch",
+          },
+          {
+            pass: "Cow Pet",
+            price: "499",
+            effect:
+              "Unlocks the Cow Pet (the gem-buy Dog Pet costs 1,000 Gems). See /pets for the Dog vs Cow decision.",
+            created: "2026-09-15",
+          },
+        ],
+      },
+      {
+        id: "gamepasses-recommend",
+        type: "steps",
+        heading: "Recommended first-buy order",
+        items: [
+          {
+            title: "Buy Permanent Infinite Bag first (99 R$)",
+            body: "Carry capacity is the bottleneck every new player hits first. Permanent Infinite Bag adds +50% capacity across every bag slot, so you stop running back to sell mid-sweep. It also boosts Hay Merchant, Pack Mule, and Forkmaster returns for the rest of your account.",
+            doneCondition:
+              "You can clear a full haystack round without running out of bag space before reaching the Sell Hay cart.",
+          },
+          {
+            title: "Buy 2x Class Luck second if you roll classes (199 R$)",
+            body: "If you spend 40 Gems per class roll at the Classes booth, 2x Class Luck doubles the chance of pulling any non-Starter class. The official catalogue has not published an exact multiplier, so treat the benefit as roughly halving your expected rolls to a target class.",
+            doneCondition:
+              "You roll classes regularly and want a faster path to Pack Mule, Hay Merchant, or Drone Specialist.",
+          },
+          {
+            title: "Buy Permanent Drone or Permanent Vacuum once you reach Chapter 2 (129 / 249 R$)",
+            body: "Both clear bulk hay faster than manual searching — exactly what Chapter 2's Basement Key hunt needs. Permanent Drone is the cheaper pick if you want a passive helper; Permanent Vacuum is the faster pick if you want to clear hay yourself.",
+            doneCondition:
+              "You are working on the Chapter 2 Basement Key and want a faster Key surface rate.",
+          },
+          {
+            title: "Skip Cow Pet until you have the cheaper upgrades",
+            body: "The Cow Pet costs 499 R$ and competes with the rest of the catalogue. The Dog Pet costs 1,000 Gems (free track). For most players the Permanent Bag + 2x Class Luck combination outperforms the Cow Pet on per-Robux value until Chapter 2 is finished.",
+            doneCondition:
+              "You already own Permanent Bag and either 2x Class Luck or a Chapter 2 tool.",
+          },
+        ],
+      },
+      {
+        id: "gamepasses-new",
+        type: "callout",
+        heading: "What's new in the 2026-09-15 build",
+        tone: "confirmed",
+        title: "Three new entries",
+        body: "The 2026-09-15 build moved the catalogue from 8 passes to 9: Fast Rolls (179 R$), 2x Class Luck (199 R$), and Cow Pet (499 R$) were added. The official catalogue does not yet publish a full effect description for Fast Rolls or 2x Class Luck; treat their effects as confirmed by third-party guides (Earnaldo beginner guide, allthings.how Pets & Cosmetics guide) until Garage Games updates the official description.",
+      },
+      {
+        id: "gamepasses-sources",
+        type: "prose",
+        heading: "Where the price and effect list comes from",
+        body: "The 9-pass table above mirrors the same price and effect totals published in three independent current guides: the Earnaldo beginner guide, the allthings.how Pets and Cosmetics guide, and the searchfortheneedle-roblox.org Updates log. The catalogue moved from 8 to 9 after the 2026-09-15 build, which is why older pages on this site still describe an 8-pass environment.",
+        links: [
+          {
+            label: "Earnaldo beginner guide",
+            href: "https://earnaldo.com/blog/search-for-the-needle-beginners-guide",
+            description: "All 9 price and effect pairs in one table.",
+          },
+          {
+            label: "allthings.how Pets and Cosmetics guide",
+            href: "https://allthings.how/search-for-the-needle-pets-and-cosmetics-guide-dog-and-cow",
+            description: "Independent confirmation of the 9-pass totals.",
+          },
+          {
+            label: "searchfortheneedle-roblox.org Updates",
+            href: "https://searchfortheneedle-roblox.org/updates",
+            description: "Patch-by-patch catalogue changes including 2026-09-15.",
+          },
+        ],
+      },
+    ],
+    faqIds: [
+      "gamepasses-how-many",
+      "gamepasses-cheapest-worth-it",
+      "gamepasses-2x-class-luck",
+      "gamepasses-first-buy",
+      "gamepasses-cow-pet",
+    ],
+    relatedPageIds: [
+      "fixed-search-for-the-needle-classes-en-US",
+      "fixed-search-for-the-needle-how-to-play-en-US",
+      "fixed-search-for-the-needle-pets-en-US",
+      "fixed-search-for-the-needle-tips-en-US",
+      "fixed-search-for-the-needle-updates-en-US",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-17",
+  },
+  {
+    id: "fixed-search-for-the-needle-pets-en-US",
+    translationKey: "search-for-the-needle-pets",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "pets",
+    url: "/pets",
+    pageType: "guides",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Pets, Pet Cosmetics, and the Index — Dog, Cow, restock, and collection log",
+    seoTitle: "Search For The Needle Pets — Dog vs Cow, Cosmetics restock, Index log",
+    metaDescription:
+      "Search For The Needle pets guide: Dog (1,000 Gems) vs Cow (499 R$), the Pet Cosmetics stand with hourly restocking rarities (Common 40%, Uncommon 30%, Rare 18%, Epic 9%, Legendary 3%), and the 2026-09-12 Index collection log (completion rewards not yet announced).",
+    summary:
+      "Pick a Pet (Dog vs Cow), chase Pet Cosmetics during the hourly restock, and start tracking the Index collection log from the 2026-09-12 update.",
+    hero: {
+      eyebrow: "Pets + Index",
+      subtitle:
+        "Pick a Pet (Dog 1,000 Gems vs Cow 499 R$), equip Pet Cosmetics with hourly restocking rarities, and start the Index collection log.",
+      ctas: [
+        { label: "Gamepasses", href: "/gamepasses" },
+        { label: "How to play", href: "/how-to-play" },
+        { label: "Codes", href: "/codes" },
+      ],
+    },
+    quickAnswer:
+      "Two pets are available after the 2026-09-12 Index + Pets event: the Dog pet costs 1,000 Gems (free track, the daily login and class rolls feed it) and the Cow pet costs 499 R$ (paid track, bought via the Cow Pet gamepass). The Pet Cosmetics stand restocks every hour with rarity weights Common 40%, Uncommon 30%, Rare 18%, Epic 9%, Legendary 3%. The Index is a new collection log that records items you have found; its completion rewards have not been officially announced yet, so treat any specific reward table as community-attributed.",
+    keyFacts: [
+      { label: "Pet — Dog", value: "1,000 Gems" },
+      { label: "Pet — Cow", value: "499 R$" },
+      { label: "Cosmetics restock", value: "Hourly" },
+      { label: "Index introduced", value: "2026-09-12" },
+      { label: "Index rewards", value: "Not announced as of 2026-09-17" },
+    ],
+    modules: [
+      {
+        id: "pets-dog-vs-cow",
+        type: "data-table",
+        heading: "Dog vs Cow — pick a pet",
+        columns: [
+          { key: "pet", label: "Pet" },
+          { key: "cost", label: "Cost" },
+          { key: "track", label: "Track" },
+          { key: "behaviour", label: "Behaviour during a round" },
+        ],
+        rows: [
+          {
+            pet: "Dog Pet",
+            cost: "1,000 Gems",
+            track: "Free (in-game currency)",
+            behaviour:
+              "Auto-collects hay near you during the haystack search loop; the free-track cost means you fund it from the 8-day 880-Gem login track plus class rolls.",
+          },
+          {
+            pet: "Cow Pet",
+            cost: "499 R$",
+            track: "Paid (Robux)",
+            behaviour:
+              "Auto-collects hay near you during the haystack search loop; the paid-track cost unlocks the pet immediately without spending 1,000 Gems of your roll budget.",
+          },
+        ],
+      },
+      {
+        id: "pets-decision",
+        type: "prose",
+        heading: "Which pet to pick first",
+        body: "If you are rolling classes regularly, the Dog Pet at 1,000 Gems is the cheaper long-term pick: it costs 25 class rolls at 40 Gems each, which the 8-day login track nearly covers on its own. If you would rather not spend your Gem budget on a pet and you already have Robux to spare, the Cow Pet at 499 R$ is the direct-purchase alternative. Both pets perform the same auto-collect role during a haystack round, so the decision is purely about whether your free track or your Robux balance is the better currency to spend.",
+      },
+      {
+        id: "pets-cosmetics-restock",
+        type: "data-table",
+        heading: "Pet Cosmetics stand — restock rarity weights",
+        columns: [
+          { key: "rarity", label: "Rarity" },
+          { key: "weight", label: "Drop weight" },
+          { key: "cadence", label: "Restock cadence" },
+        ],
+        rows: [
+          {
+            rarity: "Common",
+            weight: "40%",
+            cadence: "Hourly restock",
+          },
+          {
+            rarity: "Uncommon",
+            weight: "30%",
+            cadence: "Hourly restock",
+          },
+          {
+            rarity: "Rare",
+            weight: "18%",
+            cadence: "Hourly restock",
+          },
+          {
+            rarity: "Epic",
+            weight: "9%",
+            cadence: "Hourly restock",
+          },
+          {
+            rarity: "Legendary",
+            weight: "3%",
+            cadence: "Hourly restock",
+          },
+        ],
+      },
+      {
+        id: "pets-cosmetics-strategy",
+        type: "steps",
+        heading: "How to chase Cosmetics without burning Gems",
+        items: [
+          {
+            title: "Check the stand at the top of every hour",
+            body: "The stand restocks on the hour. Logging in on the hour gives you the freshest pool before other players pick the Legendary and Epic cosmetics.",
+            doneCondition:
+              "You open Search For The Needle on the hour and see a freshly restocked stand.",
+          },
+          {
+            title: "Buy Common and Uncommon rolls first",
+            body: "Common (40%) and Uncommon (30%) cosmetics are the cheapest per-rarity drop and let you fill your cosmetic slots without spending Gems on rerolls.",
+            doneCondition:
+              "Every cosmetic slot on your pet has a Common or Uncommon cosmetic equipped.",
+          },
+          {
+            title: "Save Robux for the Cow Pet pass instead of cosmetics",
+            body: "The Cosmetics stand is a Gem sink; the Cow Pet pass is a one-time 499 R$ unlock. Spend Robux on the Cow Pet pass first, then chase cosmetics with Gems.",
+            doneCondition:
+              "You own the Cow Pet pass and only spend Gems on cosmetics after that.",
+          },
+          {
+            title: "Treat Legendary cosmetics as drops, not targets",
+            body: "At a 3% drop weight, Legendary cosmetics average one in roughly 33 restocks. Treat any Legendary drop as a bonus and do not chase a specific cosmetic with real-money rolls.",
+            doneCondition:
+              "You stop chasing a specific cosmetic and accept the drop odds.",
+          },
+        ],
+      },
+      {
+        id: "pets-how-to-confirm",
+        type: "prose",
+        heading: "How to confirm a pet is working",
+        body: "Once a pet is equipped, walk into the haystack search area and watch the ground immediately around your character: the Dog and Cow pets both auto-collect loose hay within a short radius of your character. If you see hay disappearing without you swinging the Pitchfork or pressing a tool, the pet is active. If hay does not auto-collect, re-open the Pets menu and confirm the pet icon shows the active highlight, then re-enter the haystack area; the pet sometimes unsyncs after a server round restart.",
+      },
+      {
+        id: "index-watch",
+        type: "callout",
+        heading: "Index collection log watch",
+        tone: "unknown",
+        title: "Completion rewards not announced",
+        body: "The Index is a collection log introduced in the 2026-09-12 build. The current published state is: a collection log exists, items are recorded when you find them, and the Index is the section that moves after every update. The completion rewards, the number of tracks, and the exact list of indexed items have not been officially published by Garage Games as of 2026-09-17. Any specific reward table you see in third-party guides should be treated as community-attributed until Garage Games confirms it on the official Roblox game page or on the creator group channels.",
+      },
+      {
+        id: "pets-sources",
+        type: "prose",
+        heading: "Where the pet, cosmetics, and Index list comes from",
+        body: "The Dog (1,000 Gems) and Cow (499 R$) pricing, the Pet Cosmetics 40/30/18/9/3 restock weights, and the Index introduction on 2026-09-12 are documented independently in the allthings.how Pets and Cosmetics guide, the Earnaldo beginner guide, and the searchfortheneedle-roblox.org Updates log. The Index completion rewards remain a watch item and will be added here once Garage Games publishes them.",
+        links: [
+          {
+            label: "allthings.how Pets and Cosmetics guide",
+            href: "https://allthings.how/search-for-the-needle-pets-and-cosmetics-guide-dog-and-cow",
+            description: "Dog and Cow prices, Cosmetics restock weights, Index context.",
+          },
+          {
+            label: "Earnaldo beginner guide",
+            href: "https://earnaldo.com/blog/search-for-the-needle-beginners-guide",
+            description: "Independent confirmation of the Pets and Index sections.",
+          },
+          {
+            label: "searchfortheneedle-roblox.org Updates",
+            href: "https://searchfortheneedle-roblox.org/updates",
+            description: "Patch log including the 2026-09-12 Index + Pets event.",
+          },
+        ],
+      },
+    ],
+    faqIds: [
+      "pets-dog-or-cow",
+      "pets-cow-pass-cost",
+      "pets-cosmetics-restock",
+      "pets-index-rewards",
+      "pets-when-introduced",
+    ],
+    relatedPageIds: [
+      "fixed-search-for-the-needle-how-to-play-en-US",
+      "fixed-search-for-the-needle-gamepasses-en-US",
+      "fixed-search-for-the-needle-codes-en-US",
+      "fixed-search-for-the-needle-classes-en-US",
+      "fixed-search-for-the-needle-updates-en-US",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "guides",
