@@ -38,7 +38,7 @@ export const contentPages: PageContent[] = [
       { label: "Creator", value: "Garage Games (group id 279288859)" },
       { label: "Universe ID", value: "10756011174" },
       { label: "Place ID", value: "77108422251420" },
-      { label: "Latest API updated", value: "2026-09-13" },
+      { label: "Latest API updated", value: "2026-09-17" },
     ],
     modules: [
       {
@@ -133,13 +133,13 @@ export const contentPages: PageContent[] = [
     h1: "How to Play Search For The Needle — Roblox Haystack Guide",
     seoTitle: "How to Play Search For The Needle — Roblox Haystack Guide",
     metaDescription:
-      "How to play Search For The Needle — a cozy Roblox haystack search game. Players find a hidden needle, beat their best time. First-join walkthrough and round loop.",
+      "How to play Search For The Needle — a cozy Roblox haystack search game. Players find a hidden needle, beat their best time. First-join walkthrough, Tools & Upgrades buy order, and round loop.",
     summary:
-      "First-join walkthrough for Search For The Needle: open the official Roblox game page, load Place ID 77108422251420, and start the haystack search-and-find loop.",
+      "First-join walkthrough for Search For The Needle: open the official Roblox game page, load Place ID 77108422251420, run the haystack search-and-find loop, and pick Tools & Upgrades in priority order.",
     hero: {
       eyebrow: "How to play",
       subtitle:
-        "Open the official Roblox game page, load the haystack area, and start the search-and-find loop. Beat your best time round after round.",
+        "Open the official Roblox game page, load the haystack area, and start the search-and-find loop. Pick Tools & Upgrades in priority order when the in-round menu opens.",
       ctas: [
         { label: "Haystack locations", href: "/locations" },
         { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
@@ -147,23 +147,25 @@ export const contentPages: PageContent[] = [
         { label: "Gamepasses", href: "/gamepasses" },
         { label: "Pets", href: "/pets" },
         { label: "Tips", href: "/tips" },
+        { label: "Latest updates", href: "/updates" },
       ],
     },
     quickAnswer:
-      "Search For The Needle is a chill cozy Roblox game where players search through giant haystacks to find a single hidden needle and beat their best time. New players join a public server, enter the haystack area, search for the needle, and time their best run.",
+      "Search For The Needle is a chill cozy Roblox game where players search through giant haystacks to find a single hidden needle and beat their best time. New players join a public server, enter the haystack area, search for the needle, and time their best run. When the in-round upgrade menu appears, take Hold and Grasp before any number upgrade, then Speed, then Power; Pitchfork, Dynamite, and Vacuum are bought with in-run Cash at $8, $25, and $69.99 respectively.",
     keyFacts: [
       { label: "Universe ID", value: "10756011174" },
       { label: "Place ID", value: "77108422251420" },
       { label: "Created", value: "2026-08-23" },
-      { label: "Last updated", value: "2026-09-13" },
+      { label: "Last updated", value: "2026-09-17" },
       { label: "Score channel", value: "Personal best time" },
+      { label: "First upgrade to take", value: "Hold or Grasp" },
     ],
     modules: [
       {
         id: "universe-identity",
         type: "prose",
         heading: "The Roblox Universe identity",
-        body: "The official identity of the experience is \"Search For The Needle\" (Roblox Games API name: \"[🐶] Search For The Needle\"), published by the creator group Garage Games under Universe ID 10756011174 and Place ID 77108422251420. The Universe was created on 2026-08-23 and was last updated on 2026-09-13 according to the official Roblox Games API fields. The brief snapshot of 2026-09-14 records 38,378,835 visits, 112,317 favorites, a top-trending rank of 5, 26,382 in the player_count field, and 59,080 concurrent users at the brief moment; these numbers will move on the next snapshot and should be re-pulled from the API before any reader-facing claim is repeated.",
+        body: "The official identity of the experience is \"Search For The Needle\" (Roblox Games API name: \"[🐶] Search For The Needle\"), published by the creator group Garage Games under Universe ID 10756011174 and Place ID 77108422251420. The Universe was created on 2026-08-23 and was last updated on 2026-09-17 according to the official Roblox Games API fields. A 2026-09-17 snapshot records roughly 50M visits, 38.5K playing, and 137K favorites — these numbers will move on the next snapshot and should be re-pulled from the API before any reader-facing claim is repeated.",
       },
       {
         id: "search-loop",
@@ -196,6 +198,147 @@ export const contentPages: PageContent[] = [
             title: "Run another round",
             body: "Wait for the server to restart the round prompt and run another haystack sweep to beat your previous time.",
           },
+        ],
+      },
+      {
+        id: "tools-overview",
+        type: "prose",
+        heading: "Tools & Upgrades — the in-round menu at a glance",
+        body: "Every round the in-round upgrade menu offers a mix of trait upgrades (Hold, Grasp, Speed, Power, Lucky Blast) and tool unlocks (Pitchfork, Dynamite, Vacuum, Hay Drone). The trait upgrades fix waits before they add numbers — taking Hold or Grasp first removes the dead-time between actions and makes every later upgrade feel faster. Tools cost in-run Cash (Pitchfork $8, Dynamite $25, Vacuum $69.99) and clear bulk hay faster than manual searching; the Hay Drone acts as a passive helper. Pick traits first, then buy tools with the Cash you earn from selling hay, then take the matching class bonus (Forkmaster for Pitchfork, Demolitionist for Dynamite) only if the roll lands.",
+      },
+      {
+        id: "tools-table",
+        type: "data-table",
+        heading: "Tools & Upgrades — priority, cost, class pairing",
+        columns: [
+          { key: "upgrade", label: "Upgrade" },
+          { key: "kind", label: "Kind" },
+          { key: "priority", label: "Priority" },
+          { key: "cost", label: "Cost" },
+          { key: "effect", label: "What it does" },
+          { key: "class", label: "Best class pairing" },
+        ],
+        rows: [
+          {
+            upgrade: "Hold",
+            kind: "Trait",
+            priority: "1 — take first",
+            cost: "Free (in-round roll)",
+            effect: "Increases hay held per bag — fewer trips back to sell.",
+            class: "Pack Mule (stacks carry)",
+          },
+          {
+            upgrade: "Grasp",
+            kind: "Trait",
+            priority: "2 — take early",
+            cost: "Free (in-round roll)",
+            effect: "Wider pick-up radius for hay — fewer micro-passes.",
+            class: "Pack Mule / Hay Merchant",
+          },
+          {
+            upgrade: "Speed",
+            kind: "Trait",
+            priority: "3 — take after Hold + Grasp",
+            cost: "Free (in-round roll)",
+            effect: "Faster traversal around the hay pile.",
+            class: "Starter (universal)",
+          },
+          {
+            upgrade: "Power",
+            kind: "Trait",
+            priority: "4 — take mid-round",
+            cost: "Free (in-round roll)",
+            effect: "More hay per action — multiplies the work Hold and Grasp unlock.",
+            class: "Forkmaster (Pitchfork swings)",
+          },
+          {
+            upgrade: "Lucky Blast",
+            kind: "Trait",
+            priority: "5 — take if already rolling Demolitionist",
+            cost: "Free (in-round roll)",
+            effect: "Bonus Diamonds and bonus blast drops on hay clears.",
+            class: "Demolitionist (Dynamite)",
+          },
+          {
+            upgrade: "Pitchfork",
+            kind: "Tool",
+            priority: "6 — buy first tool with Cash",
+            cost: "$8 Cash",
+            effect: "Multi-hit hay swings; collects 25% more hay per swing with Forkmaster.",
+            class: "Forkmaster",
+          },
+          {
+            upgrade: "Dynamite",
+            kind: "Tool",
+            priority: "7 — buy once Cash > $25",
+            cost: "$25 Cash",
+            effect: "Clears bulk hay fast; +20% blast radius and 10% TNT split with Demolitionist.",
+            class: "Demolitionist",
+          },
+          {
+            upgrade: "Hay Drone",
+            kind: "Tool",
+            priority: "8 — passive helper",
+            cost: "Free (in-round roll)",
+            effect: "A passive Drone auto-collects hay near you; +30% flight speed with Drone Specialist.",
+            class: "Drone Specialist",
+          },
+          {
+            upgrade: "Vacuum",
+            kind: "Tool",
+            priority: "9 — buy last once Cash > $70",
+            cost: "$69.99 Cash",
+            effect: "Sucks hay from the pile; surfaces the Basement Key and the needle fastest.",
+            class: "Starter (universal)",
+          },
+        ],
+      },
+      {
+        id: "tools-buy-order",
+        type: "steps",
+        heading: "Recommended Tools & Upgrades buy order",
+        items: [
+          {
+            title: "Take Hold or Grasp first",
+            body: "The first trait you roll is almost always Hold or Grasp. Take whichever appears — both fix wait time before they add numbers, and every later upgrade benefits from the extra carry or pick-up radius.",
+          },
+          {
+            title: "Take Speed, then Power, on the next two rolls",
+            body: "Speed and Power are the two number upgrades. Speed helps every traversal path; Power multiplies whatever Hold and Grasp already gave you.",
+          },
+          {
+            title: "Buy Pitchfork first ($8 Cash)",
+            body: "Pitchfork is the cheapest tool and the one the Forkmaster class multiplies. Buy it the moment you have $8 Cash from selling hay.",
+          },
+          {
+            title: "Buy Dynamite when Cash > $25",
+            body: "Dynamite clears bulk hay and is what the Demolitionist class multiplies. Skip if the class you rolled is not Demolitionist.",
+          },
+          {
+            title: "Save for Vacuum ($69.99) only on a Basement Key hunt",
+            body: "Vacuum is the most expensive tool. It is the right pick when you are hunting the Chapter 2 Basement Key — otherwise, spend the Cash on Dynamite stacks first.",
+          },
+        ],
+      },
+      {
+        id: "tools-permanent",
+        type: "prose",
+        heading: "When to buy the permanent gamepass instead",
+        body: "If you find yourself buying Pitchfork, Dynamite, or Vacuum every round, the matching permanent gamepass on /gamepasses is the better long-term spend: Permanent Pitchfork (99 R$), Permanent Dynamite (149 R$), Permanent Drone (129 R$), and Permanent Vacuum (249 R$) all unlock the same tool permanently across every round. Permanent Drone is the cheaper pick if you want a passive helper; Permanent Vacuum is the right pick if you are farming Chapter 2 Key drops.",
+        links: [
+          { label: "Gamepasses catalogue", href: "/gamepasses" },
+          { label: "Classes table", href: "/classes" },
+          { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
+        ],
+      },
+      {
+        id: "alien-coins-link",
+        type: "prose",
+        heading: "Side track: Alien event & Alien Coins",
+        body: "If a Farmhouse, Barn, or Silo round drops Alien Coins on completion, those coins spend on Alien Chests in the lobby at roughly 100 coins per chest. The 2026-09-03 build added both the Alien theme and the Alien Coins currency; the Chapter 2 Basement finale also features an Alien + UFO cutscene. See the Alien event block on /updates for the earn rules and the limited-time caveat.",
+        links: [
+          { label: "Alien event on /updates", href: "/updates#alien-event" },
+          { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
         ],
       },
       {
@@ -240,6 +383,8 @@ export const contentPages: PageContent[] = [
       "single-or-multiplayer",
       "round-length",
       "has-codes-or-rewards",
+      "tools-first-upgrade",
+      "tools-buy-order",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-tips-en-US",
@@ -253,7 +398,7 @@ export const contentPages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "fixed-search-for-the-needle-locations-en-US",
@@ -285,7 +430,7 @@ export const contentPages: PageContent[] = [
       { label: "Universe ID", value: "10756011174" },
       { label: "Place ID", value: "77108422251420" },
       { label: "Creator", value: "Garage Games (group id 279288859)" },
-      { label: "Last API updated", value: "2026-09-13" },
+      { label: "Last API updated", value: "2026-09-17" },
     ],
     modules: [
       {
@@ -367,90 +512,170 @@ export const contentPages: PageContent[] = [
     url: "/updates",
     pageType: "site",
     presentation: { shell: "content", variant: "reading-right-rail" },
-    h1: "Search For The Needle updates and patch notes",
-    seoTitle: "Search For The Needle updates and patch notes",
+    h1: "Search For The Needle updates — current build and changelog",
+    seoTitle: "Search For The Needle updates — current build and changelog",
     metaDescription:
-      "Search For The Needle updates: the latest patch timestamp from the official Roblox game page and Games API, plus what has not yet been announced as of 2026-09-14.",
+      "Search For The Needle updates: the current Roblox universe build (2026-09-17), per-build changelog rows for the 7 prior dated builds, and what Garage Games has or has not confirmed.",
     summary:
-      "Track the latest Search For The Needle build timestamp, what is confirmed, and what is still Not announced as of 2026-09-14.",
+      "Patch hub for Search For The Needle: current universe build at the top, then one-line per-build rows in reverse chronological order, then the Alien Coins event block and sources.",
     hero: {
       eyebrow: "Updates",
       subtitle:
-        "Track the latest Search For The Needle build timestamp from the Roblox Games API and what Garage Games has or has not confirmed.",
+        "Current universe build at the top, one-line changelog rows for every dated build, and the Alien event & Alien Coins block.",
       ctas: [
         { label: "Active codes", href: "/codes" },
         { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
         { label: "Haystack locations", href: "/locations" },
+        { label: "How to play", href: "/how-to-play" },
       ],
     },
     quickAnswer:
-      "The latest Search For The Needle build timestamp confirmed by the official Roblox Games API is 2026-09-13. Garage Games has not published a written patch log, balance numbers, new haystack areas, new needle categories, or limited-time event details for that build as of 2026-09-14.",
+      "The current Search For The Needle universe build is 2026-09-17T16:53:53.8051955Z, with about 50M visits, 38.5K playing, and 137K favorites on the Roblox Games API snapshot. Eight dated builds are confirmed by the Games API or third-party changelogs: 2026-09-17 current, 2026-09-15 gamepasses expansion, 2026-09-13 maintenance, 2026-09-12 Pets + Index event, 2026-09-06 API update, 2026-09-05 Chapter 2 launch, 2026-09-03 Alien visuals + Alien Coins, and 2026-08-23 universe launch.",
     keyFacts: [
-      { label: "Latest build", value: "2026-09-13 (Games API `updated`)" },
+      { label: "Current build", value: "2026-09-17 (Games API `updated`)" },
       { label: "Universe created", value: "2026-08-23" },
-      { label: "Patch log", value: "Not announced as of 2026-09-14" },
+      { label: "Active builds recorded", value: "8 dated entries" },
       { label: "Creator", value: "Garage Games (group id 279288859)" },
     ],
     modules: [
       {
-        id: "latest-patch",
-        type: "prose",
-        heading: "Latest confirmed patch (2026-09-13)",
-        body: "The most recent Search For The Needle update you can verify today is the build change recorded on the official Roblox Games API multi-get for Universe 10756011174, where the `updated` field is 2026-09-13T19:41:24.6568937Z. That timestamp is the only first-party signal that a new build shipped; the Roblox Games API also confirms the Universe was created on 2026-08-23T09:25:26.774Z, so the game has been publicly playable for roughly three weeks at the research date.",
+        id: "current-build",
+        type: "callout",
+        heading: "Current universe build",
+        tone: "confirmed",
+        title: "2026-09-17T16:53:53.8051955Z",
+        body: "Roblox Games API `updated` for Universe 10756011174 is 2026-09-17T16:53:53.8051955Z, with the snapshot recording roughly 50M visits, 38.5K playing, and 137K favorites. This is the build timestamp to anchor every patch log line below.",
       },
       {
-        id: "what-confirmed",
+        id: "changelog",
         type: "data-table",
-        heading: "What the 2026-09-13 build confirms",
+        heading: "Changelog — every dated build, reverse chronological",
         columns: [
-          { key: "claim", label: "Claim" },
-          { key: "status", label: "Status" },
-          { key: "source", label: "Source" },
+          { key: "date", label: "Date" },
+          { key: "summary", label: "One-line summary" },
+          { key: "links", label: "Related on-site page" },
         ],
         rows: [
           {
-            claim: "A new build of Place ID 77108422251420 is live",
-            status: "Confirmed",
-            source: "Roblox Games API `updated` 2026-09-13",
+            date: "2026-09-17",
+            summary:
+              "Current universe build (Games API `updated`); no published patch notes.",
+            links: "—",
           },
           {
-            claim: "Official Roblox game page metadata has refreshed",
-            status: "Confirmed",
-            source: "Official Roblox game page",
+            date: "2026-09-15",
+            summary:
+              "Gamepasses expansion: added Fast Rolls (179 R$), 2x Class Luck (199 R$), Cow Pet (499 R$) — catalogue moved from 8 to 9 passes.",
+            links: "/gamepasses",
           },
           {
-            claim:
-              "Public playability, top-trending rank 5, snapshot numbers (visits 38,378,835, player_count 26,382, favorites 112,317)",
-            status: "Confirmed",
-            source: "2026-09-14 brief snapshot",
+            date: "2026-09-13",
+            summary:
+              "Maintenance build — Games API `updated` tick on the 2026-09-13T19:41:24 timestamp; no published content patch.",
+            links: "/updates",
           },
           {
-            claim: "New haystack area added in this build",
-            status: "Not announced as of 2026-09-14",
-            source: "Garage Games social channels",
+            date: "2026-09-12",
+            summary:
+              "Pets + Index event — Dog Pet (1,000 Gems), Pet Cosmetics hourly restock, Index collection log introduced (completion rewards not yet published).",
+            links: "/pets",
           },
           {
-            claim: "New needle category, needle skin, or needle reward tier",
-            status: "Not announced as of 2026-09-14",
-            source: "Garage Games social channels",
+            date: "2026-09-06",
+            summary:
+              "API update — Roblox Games API description field refresh; no documented gameplay changes.",
+            links: "—",
           },
           {
-            claim: "Specific balance number change",
-            status: "Not announced as of 2026-09-14",
-            source: "Garage Games social channels",
+            date: "2026-09-05",
+            summary:
+              "Chapter 2 launch — Place 83445806734780 added; Basement Key + 3 Levers + 3 Puzzles + UFO escape; +25 Gems reward.",
+            links: "/chapter-2-basement",
           },
           {
-            claim: "Limited-time event added or removed",
-            status: "Not announced as of 2026-09-14",
-            source: "Garage Games social channels",
+            date: "2026-09-03",
+            summary:
+              "Alien visuals + Alien Coins — Alien theme applied to the Chapter 2 finale and Alien Coins introduced as a new currency earnable on Farmhouse / Barn / Silo rounds.",
+            links: "/updates#alien-event",
+          },
+          {
+            date: "2026-08-23",
+            summary:
+              "Universe launch — Universe 10756011174 created by Garage Games, Place ID 77108422251420 published to the Roblox catalog.",
+            links: "/how-to-play",
           },
         ],
+      },
+      {
+        id: "changelog-api-only",
+        type: "callout",
+        heading: "API-only timestamp rows",
+        tone: "unknown",
+        title: "No published content change",
+        body: "Roblox Games API also records intermediate `updated` ticks on 2026-08-08, 2026-08-18, 2026-08-22, 2026-08-29, 2026-09-01, and 2026-09-08. These six timestamps are machine-readable build changes, not published content patches — Garage Games has not confirmed any gameplay change for them, so treat them as background maintenance.",
+      },
+      {
+        id: "alien-event",
+        type: "prose",
+        heading: "Alien event & Alien Coins (limited-time)",
+        body: "The 2026-09-03 build introduced Alien-themed visuals and a new currency called Alien Coins. Alien Coins are earned on Farmhouse, Barn, and Silo rounds (and additionally from the ALIEN redemption code when it is active); the currency is spent on Alien Chests in the lobby at roughly 100 coins per chest. The in-game labels call this currency both Alien Coins and Alien Chests — they refer to the same limited-time pool, not two separate currencies. Garage Games has not published an end date for the Alien event window, so the Chest reward table is a watch item: pull the latest Chest catalogue from the official game page or the creator group channels before committing a full Chest pull.",
+        links: [
+          {
+            label: "Bloxodes — How to Get Alien Coins",
+            href: "https://bloxodes.com/articles/search-for-the-needle-alien-coins-guide",
+            description: "Earn rates, Chest costs, and Chest reward table.",
+          },
+          {
+            label: "searchfortheneedle-roblox.org Updates",
+            href: "https://searchfortheneedle-roblox.org/updates",
+            description: "Independent patch-by-patch confirmation of the 2026-09-03 build.",
+          },
+        ],
+      },
+      {
+        id: "alien-event-where",
+        type: "data-table",
+        heading: "Alien Coins — earn rates and spend target",
+        columns: [
+          { key: "where", label: "Where it shows up" },
+          { key: "effect", label: "What it does" },
+        ],
+        rows: [
+          {
+            where: "Farmhouse / Barn / Silo round clears",
+            effect:
+              "Earn Alien Coins on round completion; rates vary by map and have not been published per-round.",
+          },
+          {
+            where: "ALIEN redemption code",
+            effect:
+              "When ALIEN is active, redeeming it grants a small Alien Coin bundle inside the lobby.",
+          },
+          {
+            where: "Chapter 2 Basement clear",
+            effect:
+              "The Basement finale features an Alien + UFO cutscene; Alien Coin drops have been reported alongside the +25 Gems reward on clear.",
+          },
+          {
+            where: "Alien Chests in the lobby",
+            effect:
+              "Spend Alien Coins (~100 coins per Chest) for limited-time cosmetic and reward drops.",
+          },
+        ],
+      },
+      {
+        id: "alien-watch",
+        type: "callout",
+        heading: "Alien event end date",
+        tone: "caution",
+        title: "Not publicly published",
+        body: "Garage Games has not published an end date for the Alien event window or for Alien Coin / Alien Chest availability. Treat any \"event ends on X date\" claim you see in third-party posts as unconfirmed until the official Roblox game page description or a creator-group post locks it in.",
       },
       {
         id: "where-announced",
         type: "prose",
         heading: "Where new Search For The Needle updates are announced",
-        body: "Three official channels are worth watching if you want to catch a Search For The Needle update the day it ships: the official Roblox game page (metadata refreshes when the build refreshes; the `updated` timestamp on the Games API entry is the cleanest machine-readable signal), the official Roblox Games API multi-get for Universe 10756011174 (exposes `created` and `updated` timestamps and the active player count), and Garage Games' official creator group channels (group id 279288859) where written patch notes, balance notes, code drops, and event announcements are expected to land first.",
+        body: "Three official channels are worth watching if you want to catch a Search For The Needle update the day it ships: the official Roblox game page (metadata refreshes when the build refreshes; the `updated` timestamp on the Games API entry is the cleanest machine-readable signal), the official Roblox Games API multi-get for Universe 10756011174 (exposes `created` and `updated` timestamps, visits, player count, and favorites), and Garage Games' official creator group channels (group id 279288859) where written patch notes, balance notes, code drops, and event announcements are expected to land first.",
         links: [
           {
             label: "Official Roblox game page",
@@ -475,15 +700,19 @@ export const contentPages: PageContent[] = [
       "updates-where-notes",
       "updates-new-haystack-area",
       "updates-limited-events",
+      "updates-alien-event",
+      "updates-alien-coins-end-date",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-codes-en-US",
       "fixed-search-for-the-needle-locations-en-US",
       "fixed-search-for-the-needle-chapter-2-basement-en-US",
+      "fixed-search-for-the-needle-how-to-play-en-US",
+      "fixed-search-for-the-needle-pets-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "fixed-search-for-the-needle-tips-en-US",
@@ -497,25 +726,28 @@ export const contentPages: PageContent[] = [
     h1: "Search For The Needle tips for faster haystack finds",
     seoTitle: "Search For The Needle tips for faster haystack finds",
     metaDescription:
-      "Search For The Needle tips for finding the needle faster: visual sweep, traversal discipline, best-time pacing, and a new-player checklist.",
+      "Search For The Needle tips for finding the needle faster: visual sweep, traversal discipline, best-time pacing, Tools & Upgrades order, and a new-player checklist.",
     summary:
-      "Strategy tips for faster Search For The Needle haystack finds: visual sweep, traversal discipline, best-time pacing, and a new-player checklist.",
+      "Strategy tips for faster Search For The Needle haystack finds: visual sweep, traversal discipline, best-time pacing, Tools & Upgrades order, and a new-player checklist.",
     hero: {
       eyebrow: "Tips",
       subtitle:
-        "Search For The Needle tips for faster haystack finds, built from the official haystack search-and-find loop.",
+        "Search For The Needle tips for faster haystack finds, built from the official haystack search-and-find loop and the in-round upgrade order.",
       ctas: [
         { label: "How to play", href: "/how-to-play" },
         { label: "Locations", href: "/locations" },
+        { label: "Tools & Upgrades", href: "/how-to-play#tools-overview" },
+        { label: "Classes", href: "/classes" },
       ],
     },
     quickAnswer:
-      "The fastest Search For The Needle runs come from a calm visual sweep, a deliberate traversal path that avoids backtracking, and pacing that lets you finish the haystack instead of overcommitting to a single spot.",
+      "The fastest Search For The Needle runs come from a calm visual sweep, a deliberate traversal path that avoids backtracking, pacing that lets you finish the haystack instead of overcommitting to a single spot, and a disciplined in-round upgrade order: Hold or Grasp first, then Speed and Power, then the cheapest tool (Pitchfork $8, Dynamite $25, Vacuum $69.99).",
     keyFacts: [
       { label: "Score channel", value: "Personal best time" },
       { label: "Goal", value: "Find the hidden needle" },
       { label: "Loop", value: "Haystack search-and-find" },
-      { label: "Latest build", value: "2026-09-13" },
+      { label: "Latest build", value: "2026-09-17" },
+      { label: "First upgrade", value: "Hold or Grasp" },
     ],
     modules: [
       {
@@ -581,6 +813,16 @@ export const contentPages: PageContent[] = [
           },
         ],
       },
+      {
+        id: "tips-tools",
+        type: "prose",
+        heading: "Pair every tip with the right upgrade",
+        body: "Sweep discipline wins time, but the right Tools & Upgrades multiply it. Take Hold or Grasp on the first in-round roll, then Speed, then Power; buy Pitchfork ($8 Cash) the moment you can, Dynamite ($25 Cash) on the next round, and Vacuum ($69.99 Cash) only when you are hunting the Chapter 2 Basement Key. The full Tools & Upgrades table and buy order live on the /how-to-play page; the matching class pairings (Forkmaster / Demolitionist / Drone Specialist) are on /classes.",
+        links: [
+          { label: "Tools & Upgrades on /how-to-play", href: "/how-to-play#tools-overview" },
+          { label: "Classes table", href: "/classes" },
+        ],
+      },
     ],
     faqIds: [
       "tips-fastest-way",
@@ -588,15 +830,18 @@ export const contentPages: PageContent[] = [
       "tips-official-from-garage-games",
       "tips-new-player-start",
       "tips-every-haystack-area",
+      "tips-tools-buy-order",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-how-to-play-en-US",
       "fixed-search-for-the-needle-locations-en-US",
       "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-classes-en-US",
+      "fixed-search-for-the-needle-gamepasses-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "fixed-search-for-the-needle-chapter-2-basement-en-US",
@@ -610,24 +855,25 @@ export const contentPages: PageContent[] = [
     h1: "Chapter 2 Basement walkthrough — Key, 3 Levers, 3 Puzzles, UFO escape",
     seoTitle: "Search For The Needle Chapter 2 Basement walkthrough",
     metaDescription:
-      "Chapter 2 Basement walkthrough for Place ID 83445806734780: find the Basement Key, pull the Green/Red/Purple Levers, solve the crystal/code/picture Puzzles, disable the laser gate, escape the UFO, and earn +25 Gems plus the Chapter 3 teaser.",
+      "Chapter 2 Basement walkthrough for Place ID 83445806734780: find the Basement Key, pull the Green/Red/Purple Levers, solve the crystal/code/picture Puzzles, disable the laser gate, escape the UFO, and earn +25 Gems plus Alien Coins plus the Chapter 3 teaser.",
     summary:
-      "Complete Chapter 2 (Place 83445806734780) by grabbing the Basement Key, pulling all three Levers, solving all three Puzzles, disabling the red lasers, and reaching the UFO for +25 Gems.",
+      "Complete Chapter 2 (Place 83445806734780) by grabbing the Basement Key, pulling all three Levers, solving all three Puzzles, disabling the red lasers, and reaching the UFO for +25 Gems and Alien Coins.",
     hero: {
       eyebrow: "Chapter 2",
       subtitle:
-        "Find the Basement Key, pull all three Levers, solve the three Puzzles, drop the red lasers, and reach the UFO for +25 Gems.",
+        "Find the Basement Key, pull all three Levers, solve the three Puzzles, drop the red lasers, and reach the UFO for +25 Gems and Alien Coins.",
       ctas: [
         { label: "How to play", href: "/how-to-play" },
         { label: "Updates", href: "/updates" },
+        { label: "Gamepasses", href: "/gamepasses" },
       ],
     },
     quickAnswer:
-      "Chapter 2 (Place ID 83445806734780, launched 2026-09-05) rewards +25 Gems and a Chapter 3 teaser on completion. The run has three objectives in order: find the Basement Key in the haystack, pull all three Levers (Green near the boxes, Red near the Sell Hay cart, Purple beside the Alien's Jail), then solve the three Puzzles (Crystal, Code, Picture) inside the secret room. Solving the Puzzles drops the red laser traps blocking the ladder; equip the Key and climb to the Basement door to trigger the UFO cutscene.",
+      "Chapter 2 (Place ID 83445806734780, launched 2026-09-05) rewards +25 Gems, an Alien Coin bundle, and a Chapter 3 teaser on completion. The run has three objectives in order: find the Basement Key in the haystack, pull all three Levers (Green near the boxes, Red near the Sell Hay cart, Purple beside the Alien's Jail), then solve the three Puzzles (Crystal, Code, Picture) inside the secret room. Solving the Puzzles drops the red laser traps blocking the ladder; equip the Key and climb to the Basement door to trigger the UFO cutscene.",
     keyFacts: [
       { label: "Place ID", value: "83445806734780" },
       { label: "Launched", value: "2026-09-05" },
-      { label: "Reward", value: "+25 Gems + Chapter 3 teaser" },
+      { label: "Reward", value: "+25 Gems + Alien Coins + Chapter 3 teaser" },
       { label: "Badge", value: "Finished Chapter 2!" },
       { label: "Objectives", value: "Key + 3 Levers + 3 Puzzles + escape" },
     ],
@@ -715,10 +961,20 @@ export const contentPages: PageContent[] = [
         id: "ch2-lasers",
         type: "prose",
         heading: "Step 4 — Disable the red lasers and escape",
-        body: "Solving all three Puzzles drops the red laser traps that block the ladder up to the Basement door. Equip the Basement Key, climb the ladder, and reach the trapdoor at the top — the Key opens the trapdoor; the lasers only stop you reaching it. Once the trapdoor opens, a cutscene plays where the freed Alien points at a UFO, and Chapter 2 completes with the +25 Gems reward, the Finished Chapter 2! badge, and a Chapter 3 teaser.",
+        body: "Solving all three Puzzles drops the red laser traps that block the ladder up to the Basement door. Equip the Basement Key, climb the ladder, and reach the trapdoor at the top — the Key opens the trapdoor; the lasers only stop you reaching it. Once the trapdoor opens, a cutscene plays where the freed Alien points at a UFO, and Chapter 2 completes with the +25 Gems reward, an Alien Coin bundle, the Finished Chapter 2! badge, and a Chapter 3 teaser.",
         links: [
           { label: "How to play the haystack loop", href: "/how-to-play" },
           { label: "Latest patch status", href: "/updates" },
+        ],
+      },
+      {
+        id: "ch2-alien-coins",
+        type: "prose",
+        heading: "Alien Coins on a Basement clear",
+        body: "The Basement finale runs the Alien + UFO cutscene that launched in the 2026-09-03 Alien visuals + Alien Coins build. Clearing Chapter 2 grants an Alien Coin bundle on top of the +25 Gems reward; spend Alien Coins on Alien Chests in the lobby at roughly 100 coins per chest. The coin drop table per Basement clear is not officially published, so treat any exact per-clear number you see in third-party guides as unconfirmed until Garage Games publishes it. The Alien event itself is limited-time — Garage Games has not announced an end date.",
+        links: [
+          { label: "Alien event & Alien Coins block on /updates", href: "/updates#alien-event" },
+          { label: "Alien Coins cross-link on /how-to-play", href: "/how-to-play#alien-coins-link" },
         ],
       },
       {
@@ -756,16 +1012,18 @@ export const contentPages: PageContent[] = [
       "ch2-puzzle-help",
       "ch2-reward",
       "ch2-chapter-3",
+      "ch2-alien-coins",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-how-to-play-en-US",
       "fixed-search-for-the-needle-updates-en-US",
       "fixed-search-for-the-needle-tips-en-US",
       "fixed-search-for-the-needle-locations-en-US",
+      "fixed-search-for-the-needle-gamepasses-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "fixed-search-for-the-needle-classes-en-US",
@@ -779,15 +1037,16 @@ export const contentPages: PageContent[] = [
     h1: "Classes — 8 rollable classes, roll chances, and per-run effects",
     seoTitle: "Search For The Needle classes — roll chances and per-run effects",
     metaDescription:
-      "The 8 Search For The Needle classes (Starter, Pack Mule, Hay Merchant, Forkmaster, Demolitionist, Prospector, Drone Specialist, Ultimate Farmer), their roll chances, per-run effects, the 40 Gems per roll cost, and the 880 Gems 8-day login track.",
+      "The 8 Search For The Needle classes (Starter, Pack Mule, Hay Merchant, Forkmaster, Demolitionist, Prospector, Drone Specialist, Ultimate Farmer), their roll chances, per-run effects, the 40 Gems per roll cost, the 880 Gems 8-day login track, and the matching Tools & Upgrades pairing per class.",
     summary:
-      "Every rollable class, the chance to roll it, what each class does during a run, and how to plan 40-Gem rolls against the 880-Gem login track.",
+      "Every rollable class, the chance to roll it, what each class does during a run, the matching tool pairing, and how to plan 40-Gem rolls against the 880-Gem login track.",
     hero: {
       eyebrow: "Classes",
       subtitle:
-        "Eight rollable classes, their roll chances, what each class does per run, and how to plan rolls against the 40 Gems per roll cost.",
+        "Eight rollable classes, their roll chances, what each class does per run, the matching tool pairing, and how to plan rolls against the 40 Gems per roll cost.",
       ctas: [
         { label: "How to play", href: "/how-to-play" },
+        { label: "Tools & Upgrades", href: "/how-to-play#tools-overview" },
         { label: "Gamepasses", href: "/gamepasses" },
         { label: "Tips", href: "/tips" },
       ],
@@ -800,6 +1059,7 @@ export const contentPages: PageContent[] = [
       { label: "Number of classes", value: "8" },
       { label: "Pity system", value: "Not documented" },
       { label: "Where to roll", value: "Classes booth, lobby near spawn" },
+      { label: "Last updated", value: "2026-09-17" },
     ],
     modules: [
       {
@@ -875,7 +1135,59 @@ export const contentPages: PageContent[] = [
         id: "classes-recommend",
         type: "prose",
         heading: "Which class is worth chasing",
-        body: "Pack Mule is the best early target: it is the second-most common roll (25%) and it directly fixes the carry-capacity bottleneck new players face when they outgrow their starter bags. Hay Merchant (14%) is the next step if your bottleneck is selling-hay income rather than carry capacity. Forkmaster (9%) and Demolitionist (7%) reward players who already own the matching tool upgrades. Prospector (3.9%) and Drone Specialist (1%) are end-game goals that pay off when you have the inventory and tool tier to take advantage of them. Ultimate Farmer (0.1%) is a chase, not a plan — expect about 40,000 Gems of rolling per pull on average.",
+        body: "Pack Mule is the best early target: it is the second-most common roll (25%) and it directly fixes the carry-capacity bottleneck new players face when they outgrow their starter bags. Hay Merchant (14%) is the next step if your bottleneck is selling-hay income rather than carry capacity. Forkmaster (9%) and Demolitionist (7%) reward players who already own the matching tool upgrades — the Forkmaster multiplies the $8 Pitchfork, the Demolitionist multiplies the $25 Dynamite. Prospector (3.9%) and Drone Specialist (1%) are end-game goals that pay off when you have the inventory and tool tier to take advantage of them. Ultimate Farmer (0.1%) is a chase, not a plan — expect about 40,000 Gems of rolling per pull on average.",
+      },
+      {
+        id: "classes-tool-pairing",
+        type: "data-table",
+        heading: "Class × tool pairing",
+        columns: [
+          { key: "class", label: "Class" },
+          { key: "bestTool", label: "Best in-round tool to pair" },
+          { key: "why", label: "Why the pairing works" },
+        ],
+        rows: [
+          {
+            class: "Starter",
+            bestTool: "Hold + Grasp → Vacuum",
+            why: "No class bonus; fall back on Hold and Grasp traits, then Vacuum for bulk hay.",
+          },
+          {
+            class: "Pack Mule (25%)",
+            bestTool: "Hold + Grasp",
+            why: "Carry +50% compounds with Hold and Grasp trait upgrades — the fewest sell trips.",
+          },
+          {
+            class: "Hay Merchant (14%)",
+            bestTool: "Speed + Power",
+            why: "+20% sell income rewards faster sweeps; Speed + Power traits maximise hay per round.",
+          },
+          {
+            class: "Forkmaster (9%)",
+            bestTool: "Pitchfork ($8 Cash)",
+            why: "Pitchfork swings collect 25% more hay; Pitchfork upgrades cost 25% less.",
+          },
+          {
+            class: "Demolitionist (7%)",
+            bestTool: "Dynamite ($25 Cash)",
+            why: "+20% blast radius and 10% TNT split — the right tool for bulk hay clears.",
+          },
+          {
+            class: "Prospector (3.9%)",
+            bestTool: "Lucky Blast trait + Vacuum",
+            why: "50% more Diamonds rewards a Lucky Blast roll; Vacuum surfaces Diamonds fastest.",
+          },
+          {
+            class: "Drone Specialist (1%)",
+            bestTool: "Hay Drone",
+            why: "Always-on Drone, +30% flight speed, +40% carry, occasional three-drone swarm.",
+          },
+          {
+            class: "Ultimate Farmer (0.1%)",
+            bestTool: "All of the above",
+            why: "Stacks every other class bonus; periodically triggers Golden Harvest.",
+          },
+        ],
       },
       {
         id: "classes-roll-budget",
@@ -938,6 +1250,7 @@ export const contentPages: PageContent[] = [
       "classes-best-early",
       "classes-pity-system",
       "classes-where-roll",
+      "classes-tool-pairing",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-how-to-play-en-US",
@@ -947,7 +1260,7 @@ export const contentPages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-17",
   },
   {
     id: "fixed-search-for-the-needle-gamepasses-en-US",
@@ -961,16 +1274,17 @@ export const contentPages: PageContent[] = [
     h1: "Gamepasses and Dev Products — All 9 passes, prices, and effects",
     seoTitle: "Search For The Needle gamepasses — 9 passes, prices & first-buy order",
     metaDescription:
-      "All 9 Search For The Needle gamepasses and dev products with price, effect, and creation date: 2x Gems 79 R$, Permanent Bag 99 R$, Permanent Pitchfork 99 R$, Permanent Drone 129 R$, Permanent Dynamite 149 R$, Fast Rolls 179 R$, 2x Class Luck 199 R$, Permanent Vacuum 249 R$, Cow Pet 499 R$.",
+      "All 9 Search For The Needle gamepasses and dev products with price, effect, and creation date: 2x Gems 79 R$, Permanent Bag 99 R$, Permanent Pitchfork 99 R$, Permanent Drone 129 R$, Permanent Dynamite 149 R$, Fast Rolls 179 R$, 2x Class Luck 199 R$, Permanent Vacuum 249 R$, Cow Pet 499 R$, plus a Tools & Upgrades cross-link.",
     summary:
-      "Every current Search For The Needle gamepass and dev product with price, effect, and a recommended first-buy order for new players.",
+      "Every current Search For The Needle gamepass and dev product with price, effect, the in-round tool pairing, and a recommended first-buy order for new players.",
     hero: {
       eyebrow: "Gamepasses",
       subtitle:
-        "All 9 Search For The Needle gamepasses and dev products with price, effect, and a recommended first-buy order.",
+        "All 9 Search For The Needle gamepasses and dev products with price, effect, the matching Tools & Upgrades pairing, and a recommended first-buy order.",
       ctas: [
         { label: "Classes", href: "/classes" },
         { label: "How to play", href: "/how-to-play" },
+        { label: "Tools & Upgrades", href: "/how-to-play#tools-overview" },
         { label: "Pets", href: "/pets" },
       ],
     },
@@ -1117,6 +1431,16 @@ export const contentPages: PageContent[] = [
           },
         ],
       },
+      {
+        id: "gamepasses-tools-link",
+        type: "prose",
+        heading: "Permanent passes vs in-round tool upgrades",
+        body: "Four of the 9 gamepasses are permanent versions of in-round Tools & Upgrades: Permanent Pitchfork (99 R$), Permanent Drone (129 R$), Permanent Dynamite (149 R$), and Permanent Vacuum (249 R$). The in-round versions cost $8 / free-roll / $25 / $69.99 Cash and reset every round; the permanent passes unlock the tool across every round for a one-time Robux fee. Buy the in-round version first to confirm you use the tool; buy the permanent version once you are farming Chapter 2 Basement Keys and want the tool on every run.",
+        links: [
+          { label: "Tools & Upgrades on /how-to-play", href: "/how-to-play#tools-overview" },
+          { label: "Classes table", href: "/classes" },
+        ],
+      },
     ],
     faqIds: [
       "gamepasses-how-many",
@@ -1124,6 +1448,7 @@ export const contentPages: PageContent[] = [
       "gamepasses-2x-class-luck",
       "gamepasses-first-buy",
       "gamepasses-cow-pet",
+      "gamepasses-tools-permanent",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-classes-en-US",
@@ -1148,17 +1473,18 @@ export const contentPages: PageContent[] = [
     h1: "Pets, Pet Cosmetics, and the Index — Dog, Cow, restock, and collection log",
     seoTitle: "Search For The Needle Pets — Dog vs Cow, Cosmetics restock, Index log",
     metaDescription:
-      "Search For The Needle pets guide: Dog (1,000 Gems) vs Cow (499 R$), the Pet Cosmetics stand with hourly restocking rarities (Common 40%, Uncommon 30%, Rare 18%, Epic 9%, Legendary 3%), and the 2026-09-12 Index collection log (completion rewards not yet announced).",
+      "Search For The Needle pets guide: Dog (1,000 Gems) vs Cow (499 R$), the Pet Cosmetics stand with hourly restocking rarities (Common 40%, Uncommon 30%, Rare 18%, Epic 9%, Legendary 3%), the 2026-09-12 Index collection log (completion rewards not yet announced), and the Alien Coins / Alien Chests limited-time event.",
     summary:
-      "Pick a Pet (Dog vs Cow), chase Pet Cosmetics during the hourly restock, and start tracking the Index collection log from the 2026-09-12 update.",
+      "Pick a Pet (Dog vs Cow), chase Pet Cosmetics during the hourly restock, start tracking the Index collection log from the 2026-09-12 update, and spend Alien Coins on Alien Chests from the 2026-09-03 event.",
     hero: {
       eyebrow: "Pets + Index",
       subtitle:
-        "Pick a Pet (Dog 1,000 Gems vs Cow 499 R$), equip Pet Cosmetics with hourly restocking rarities, and start the Index collection log.",
+        "Pick a Pet (Dog 1,000 Gems vs Cow 499 R$), equip Pet Cosmetics with hourly restocking rarities, start the Index collection log, and spend Alien Coins on Alien Chests.",
       ctas: [
         { label: "Gamepasses", href: "/gamepasses" },
         { label: "How to play", href: "/how-to-play" },
         { label: "Codes", href: "/codes" },
+        { label: "Alien Coins", href: "/updates#alien-event" },
       ],
     },
     quickAnswer:
@@ -1169,6 +1495,7 @@ export const contentPages: PageContent[] = [
       { label: "Cosmetics restock", value: "Hourly" },
       { label: "Index introduced", value: "2026-09-12" },
       { label: "Index rewards", value: "Not announced as of 2026-09-17" },
+      { label: "Alien Coins / Alien Chests", value: "2026-09-03 event" },
     ],
     modules: [
       {
@@ -1287,6 +1614,16 @@ export const contentPages: PageContent[] = [
         body: "The Index is a collection log introduced in the 2026-09-12 build. The current published state is: a collection log exists, items are recorded when you find them, and the Index is the section that moves after every update. The completion rewards, the number of tracks, and the exact list of indexed items have not been officially published by Garage Games as of 2026-09-17. Any specific reward table you see in third-party guides should be treated as community-attributed until Garage Games confirms it on the official Roblox game page or on the creator group channels.",
       },
       {
+        id: "pets-alien-coins",
+        type: "prose",
+        heading: "Alien Coins and Alien Chests (separate from Pets + Index)",
+        body: "Alien Coins and Alien Chests are a separate limited-time economy that the 2026-09-03 build added on top of the Pets + Index event. Alien Coins are earned on Farmhouse, Barn, and Silo round clears (and additionally via the ALIEN redemption code when it is active); they spend on Alien Chests in the lobby at roughly 100 coins per chest. The in-game labels call this currency both Alien Coins and Alien Chests — they refer to the same limited-time pool, not two separate currencies. Treat the Chest reward table and the event end date as unconfirmed until Garage Games publishes them on the official game page or creator group channels.",
+        links: [
+          { label: "Alien event block on /updates", href: "/updates#alien-event" },
+          { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
+        ],
+      },
+      {
         id: "pets-sources",
         type: "prose",
         heading: "Where the pet, cosmetics, and Index list comes from",
@@ -1316,6 +1653,7 @@ export const contentPages: PageContent[] = [
       "pets-cosmetics-restock",
       "pets-index-rewards",
       "pets-when-introduced",
+      "pets-alien-coins",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-how-to-play-en-US",
@@ -1323,6 +1661,7 @@ export const contentPages: PageContent[] = [
       "fixed-search-for-the-needle-codes-en-US",
       "fixed-search-for-the-needle-classes-en-US",
       "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-chapter-2-basement-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",

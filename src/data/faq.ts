@@ -480,4 +480,108 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "official",
   },
+
+  // /how-to-play Tools & Upgrades FAQs
+  {
+    id: "tools-first-upgrade",
+    question: "What is the first upgrade to take in a Search For The Needle round?",
+    answer:
+      "Take Hold or Grasp on the first in-round upgrade roll you are offered. Both traits fix wait time (carry capacity and pick-up radius) before they add numbers, so every later upgrade benefits from them. If neither Hold nor Grasp is on offer, take Speed — it benefits every traversal path.",
+    pageIds: ["fixed-search-for-the-needle-how-to-play-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "tools-buy-order",
+    question: "What order should I buy Search For The Needle Tools & Upgrades in?",
+    answer:
+      "Hold or Grasp first (free trait roll), then Speed, then Power. Buy Pitchfork ($8 Cash) the moment you can, Dynamite ($25 Cash) on the next round if your class is Demolitionist, and save for Vacuum ($69.99 Cash) only on a Chapter 2 Basement Key hunt. The full table and per-class pairings live on the /how-to-play Tools & Upgrades section.",
+    pageIds: ["fixed-search-for-the-needle-how-to-play-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /classes Class × tool pairing FAQ
+  {
+    id: "classes-tool-pairing",
+    question: "Which Search For The Needle class pairs with which tool?",
+    answer:
+      "Forkmaster (9%) pairs with the $8 Pitchfork; Demolitionist (7%) pairs with the $25 Dynamite; Drone Specialist (1%) pairs with the Hay Drone; Pack Mule (25%) and Hay Merchant (14%) do not need a specific tool — they multiply carry and sell income respectively. Ultimate Farmer (0.1%) stacks every other class bonus. The full Class × tool pairing table lives on /classes.",
+    pageIds: ["fixed-search-for-the-needle-classes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /gamepasses Permanent vs in-round tool FAQ
+  {
+    id: "gamepasses-tools-permanent",
+    question: "Are permanent Search For The Needle tool passes worth buying?",
+    answer:
+      "Permanent Pitchfork (99 R$), Permanent Drone (129 R$), Permanent Dynamite (149 R$), and Permanent Vacuum (249 R$) are the permanent versions of the in-round tools that cost $8 / free-roll / $25 / $69.99 Cash per round. Buy the in-round version first to confirm you use the tool, then buy the permanent version once you are farming Chapter 2 Basement Keys and want the tool on every run.",
+    pageIds: ["fixed-search-for-the-needle-gamepasses-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /tips Tools & Upgrades cross-link FAQ
+  {
+    id: "tips-tools-buy-order",
+    question: "How do Search For The Needle tips change with the right upgrade order?",
+    answer:
+      "Sweep discipline wins time, but the right Tools & Upgrades multiply it. Hold or Grasp first, then Speed and Power, then the cheapest tool (Pitchfork $8, Dynamite $25, Vacuum $69.99). The full Tools & Upgrades buy order and the matching class pairings are on the /how-to-play page.",
+    pageIds: ["fixed-search-for-the-needle-tips-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /updates Alien event FAQs
+  {
+    id: "updates-alien-event",
+    question: "Is there a Search For The Needle Alien event running right now?",
+    answer:
+      "The Alien event was introduced in the 2026-09-03 build alongside the Alien visuals and Alien Coins currency. It is treated as limited-time by Garage Games but no end date has been published. The event adds Alien Coin drops on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, with Alien Chests in the lobby as the spending target (~100 coins per chest).",
+    pageIds: ["fixed-search-for-the-needle-updates-en-US"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "updates-alien-coins-end-date",
+    question: "When does the Search For The Needle Alien event end?",
+    answer:
+      "Not publicly published. Garage Games has not announced an end date for the Alien event window or for Alien Coin / Alien Chest availability. Treat any \"event ends on X date\" claim you see in third-party posts as unconfirmed until the official Roblox game page description or a creator-group post locks it in.",
+    pageIds: ["fixed-search-for-the-needle-updates-en-US"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /chapter-2-basement Alien Coins FAQ
+  {
+    id: "ch2-alien-coins",
+    question: "Do you get Alien Coins for clearing Search For The Needle Chapter 2?",
+    answer:
+      "Yes — Chapter 2 Basement clears grant an Alien Coin bundle on top of the +25 Gems reward and the Finished Chapter 2! badge. The exact per-clear bundle has not been officially published; the Alien + UFO cutscene and the coin drops are part of the 2026-09-03 Alien event. Spend Alien Coins on Alien Chests in the lobby at roughly 100 coins per chest.",
+    pageIds: ["fixed-search-for-the-needle-chapter-2-basement-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /pets Alien Coins FAQ
+  {
+    id: "pets-alien-coins",
+    question: "Are Alien Coins and Pets connected in Search For The Needle?",
+    answer:
+      "No — Alien Coins / Alien Chests and Pets / Index are two separate economies from two separate builds (2026-09-03 and 2026-09-12 respectively). Alien Coins are earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears; they spend on Alien Chests in the lobby at roughly 100 coins per chest. The Pets + Index rewards and the Alien Chest rewards are tracked separately and have different reward tables.",
+    pageIds: ["fixed-search-for-the-needle-pets-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
 ];

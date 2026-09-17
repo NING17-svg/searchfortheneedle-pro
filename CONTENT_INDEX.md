@@ -14,13 +14,13 @@ hreflang, sitemap, and route-manifest validation.
 |---|---|---|---|---|---|---|---|
 | `/` | `src/data/pages/home.ts` | Landing | Search For The Needle guide | Find the best entry point | Play on Roblox / How to play | Hub | Hub linking to every active guide. |
 | `/codes` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle codes | Track active codes | How to play / Pets / Updates | Supporting hub | Dated status; no active codes as of 2026-09-14. |
-| `/how-to-play` | `src/data/pages/content-pages.ts` | Guide | how to play Search For The Needle | First-join walkthrough | Locations / Chapter 2 / Classes / Gamepasses / Pets / Tips | Hub | Anchors the haystack search loop. |
+| `/how-to-play` | `src/data/pages/content-pages.ts` | Guide | how to play Search For The Needle | First-join walkthrough | Locations / Chapter 2 / Classes / Gamepasses / Pets / Tips / Updates | Hub | Anchors the haystack search loop; Tools & Upgrades section and Alien Coins cross-link. |
 | `/chapter-2-basement` | `src/data/pages/content-pages.ts` | Guide | Chapter 2 Basement walkthrough | Complete Place 83445806734780 | How to play / Updates | Supporting hub | Key, 3 Levers, 3 Puzzles, UFO escape. |
 | `/classes` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle classes | Plan 40-Gem class rolls | How to play / Gamepasses / Tips | Supporting hub | 8 rollable classes with chances and effects. |
 | `/gamepasses` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle gamepasses | Pick a first buy from 9 passes | Classes / How to play / Pets | Supporting hub | 9 gamepasses/dev products; 2X Class Luck 199 R$ added 2026-09-15. |
 | `/pets` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle pets | Pick a Pet and chase Cosmetics | Gamepasses / How to play / Codes | Supporting hub | Dog 1,000 Gems vs Cow 499 R$; Cosmetics 40/30/18/9/3 hourly; Index rewards unannounced. |
 | `/locations` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle haystack locations | Reference haystack areas | How to play / Tips | Supporting hub | Single documented haystack area. |
-| `/updates` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle updates | Check latest patch status | Codes / Chapter 2 / Locations | Supporting hub | Last build 2026-09-15. |
+| `/updates` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle updates | Check latest patch status | Codes / Chapter 2 / Locations / How to play | Supporting hub | Last build 2026-09-17T16:53:53.8051955Z; 8-row changelog + Alien event & Alien Coins block. |
 | `/tips` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle tips | Faster haystack finds | How to play / Locations | Supporting hub | Strategy tips for the haystack loop. |
 | `/faq` | `src/data/pages/site-pages.ts` | Guide | Search For The Needle FAQ | Get short answers | About / Contact | Answer hub | FAQ schema enabled. |
 | `/about` | `src/data/pages/site-pages.ts` | Utility | about Search For The Needle guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |

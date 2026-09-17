@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-18 - Updates patch hub, Tools & Upgrades, and Alien event block
+
+- Task: Three content-updater tasks batched together. Refresh /updates to lead with the 2026-09-17T16:53:53.8051955Z current universe build (50M visits / 38.5K playing / 137K favorites) and a reverse-chronological 8-row changelog (2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12, 2026-09-06, 2026-09-05, 2026-09-03, 2026-08-23). Add an Alien event & Alien Coins block on /updates (Task 1: 2026-09-03 build, Farmhouse / Barn / Silo earn, Alien Chests ~100 coins, naming reconciliation, end-date unconfirmed). Add a Tools & Upgrades section on /how-to-play (Task 2: Hold, Grasp, Speed, Power, Lucky Blast, Pitchfork $8, Dynamite $25, Vacuum $69.99, Hay Drone with class pairing and buy order). Cross-link /how-to-play, /chapter-2-basement, /tips, /classes, /gamepasses, and /pets.
+- Files changed: `src/data/pages/content-pages.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: /updates (current build + 8-row changelog + Alien event block), /how-to-play (Tools & Upgrades table + buy order + Alien Coins link), /chapter-2-basement (Alien Coins reward + cross-link), /tips (Tools cross-link + buy-order module), /classes (Class × tool pairing table), /gamepasses (Permanent vs in-round tool module), /pets (Alien Coins cross-link), /codes + /locations (Last API updated date refresh), / + /updates / /how-to-play (homepage hub text reflects 2026-09-17 build).
+- SEO/GEO changed: 12 new FAQ entries (tools-first-upgrade, tools-buy-order, classes-tool-pairing, gamepasses-tools-permanent, tips-tools-buy-order, updates-alien-event, updates-alien-coins-end-date, ch2-alien-coins, pets-alien-coins), broader internal-link coverage between hub pages, all dated statuses refresh to 2026-09-17.
+- Browser baseline: No theme, asset, page-shell, or guide-module changes.
+- Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
+
 ### 2026-09-17 - Gamepasses (9-pass catalogue) and Pets + Index pages added
 
 - Task: Add `/gamepasses` (all 9 gamepasses/dev products with price, effect, creation date, and a recommended first-buy order — Permanent Bag, then 2X Class Luck, then Permanent Drone/Vacuum) and `/pets` (Dog 1,000 Gems vs Cow 499 R$, Pet Cosmetics 40/30/18/9/3 hourly restock, Index collection log with rewards-unknown caveat).

@@ -29,12 +29,12 @@ export const homePage: PageContent = {
     ],
   },
   quickAnswer:
-    "Search For The Needle is a cozy Roblox haystack search game (Universe 10756011174 by Garage Games) where players search giant haystacks to find a hidden needle and beat their best time. This hub orients first-time players to active codes, haystack locations, tips, the 9 gamepasses, Pets + Cosmetics, and the latest patch notes.",
+    "Search For The Needle is a cozy Roblox haystack search game (Universe 10756011174 by Garage Games) where players search giant haystacks to find a hidden needle and beat their best time. This hub orients first-time players to active codes, haystack locations, tips, the 9 gamepasses, Tools & Upgrades, Pets + Cosmetics, the Alien event & Alien Coins, and the latest patch notes.",
   keyFacts: [
     { label: "Universe ID", value: "10756011174" },
     { label: "Place ID", value: "77108422251420" },
     { label: "Created", value: "2026-08-23" },
-    { label: "Last updated", value: "2026-09-15" },
+    { label: "Last updated", value: "2026-09-17" },
     { label: "Creator", value: "Garage Games (group id 279288859)" },
   ],
   modules: [
@@ -42,7 +42,7 @@ export const homePage: PageContent = {
       id: "home-intro",
       type: "prose",
       heading: "What Search For The Needle is right now",
-      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 15, 2026. This hub orients first-time players to active codes, haystack locations, haystack search tips, the 9 gamepasses, Pets + Cosmetics, and the latest patch notes in one place.",
+      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 17, 2026 (the current universe build, with roughly 50M visits, 38.5K playing, and 137K favorites on the snapshot). This hub orients first-time players to active codes, haystack locations, haystack search tips, the in-round Tools & Upgrades order, the 9 gamepasses, Pets + Cosmetics, the Alien event & Alien Coins, and the latest patch notes in one place.",
       links: [
         {
           label: "Official Search For The Needle Roblox game page",
@@ -112,7 +112,7 @@ export const homePage: PageContent = {
       id: "home-faq",
       type: "prose",
       heading: "Frequently asked questions",
-      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-15. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses.",
+      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-17. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses. What is the Alien event? It is the 2026-09-03 build that added Alien visuals and Alien Coins; Alien Coins are earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, and spent on Alien Chests in the lobby at roughly 100 coins per chest — see /updates for the full block.",
       links: [
         { label: "Active codes", href: "/codes" },
         { label: "How to play", href: "/how-to-play" },
