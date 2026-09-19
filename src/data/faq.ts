@@ -584,4 +584,86 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "official",
   },
+
+  // /faq Player Onboarding FAQs
+  {
+    id: "faq-what-is-sfn",
+    question: "What is Search For The Needle on Roblox?",
+    answer:
+      "Search For The Needle is a cozy Roblox haystack search game made by the Garage Games creator group under Universe ID 10756011174 and Place ID 77108422251420. The official description frames it as finding a hidden needle inside a giant haystack and beating your best time.",
+    pageIds: ["faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-is-it-free",
+    question: "Is Search For The Needle free to play?",
+    answer:
+      "Yes. The official Roblox game page lists it as a free-to-play Roblox experience — you only need a Roblox account and the Roblox client to launch Place ID 77108422251420. Optional Robux purchases (gamepasses, the Cow Pet) sit on top of the free core loop.",
+    pageIds: ["faq"],
+    category: "site",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-when-launch",
+    question: "When did Search For The Needle come out on Roblox?",
+    answer:
+      "Roblox Universe 10756011174 was created and made publicly playable on 2026-08-23 according to the official Roblox game page and the Roblox Games API created timestamp. The current universe build shipped on 2026-09-17 and is the latest verified state as of 2026-09-20.",
+    pageIds: ["faq"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-where-find-codes",
+    question: "Where do I find active Search For The Needle codes?",
+    answer:
+      "Garage Games publishes codes on the official Roblox game page description and on the official creator group channels. No active codes are currently published as of 2026-09-20 — check the /codes page for the current dated status, redemption flow, and the next time Garage Games announces one.",
+    pageIds: ["faq"],
+    category: "site",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-first-gamepass",
+    question: "Which Search For The Needle gamepass should I buy first?",
+    answer:
+      "Buy Permanent Infinite Bag first at 99 R$ — it adds +50% carry capacity to every bag slot, which fixes the daily-play bottleneck before you spend anything else. If you roll classes regularly, take 2x Class Luck at 199 R$ second; once you reach Chapter 2, take Permanent Drone (129 R$) or Permanent Vacuum (249 R$) for the Basement Key hunt.",
+    pageIds: ["faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-alien-event",
+    question: "What is the Search For The Needle Alien event?",
+    answer:
+      "The Alien event is a 2026-09-03 build that added the Alien visuals and the Alien Coins currency. Alien Coins drop on Farmhouse, Barn, and Silo round clears and on Chapter 2 Basement clears, and you spend them on Alien Chests in the lobby at roughly 100 coins per chest — Garage Games has not published an end date for the event window.",
+    pageIds: ["faq"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-daily-login-track",
+    question: "Is there a daily login reward track in Search For The Needle?",
+    answer:
+      "Yes. The 8-day login track grants 880 Gems total — about 22 class rolls at the 40-Gem-per-roll cost. Liking the game and joining the official Garage Games creator group each add a one-time +25 Gems, so the full pre-roll budget for a new account lands near 930 Gems.",
+    pageIds: ["faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "faq-haystack-sweep",
+    question: "What is the fastest way to sweep a Search For The Needle haystack?",
+    answer:
+      "Run a calm wide visual sweep first so you stop missing obvious needle areas, then commit to one simple search pattern (rows or quadrants) instead of random dives. Cut your losses on haystack sections you have already cleared and finish the round quickly — speed, not first-square accuracy, is the scoring channel the official description rewards.",
+    pageIds: ["faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
 ];

@@ -22,7 +22,7 @@ hreflang, sitemap, and route-manifest validation.
 | `/locations` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle haystack locations | Reference haystack areas | How to play / Tips | Supporting hub | Single documented haystack area. |
 | `/updates` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle updates | Check latest patch status | Codes / Chapter 2 / Locations / How to play | Supporting hub | Last build 2026-09-17T16:53:53.8051955Z; 8-row changelog + Alien event & Alien Coins block. |
 | `/tips` | `src/data/pages/content-pages.ts` | Guide | Search For The Needle tips | Faster haystack finds | How to play / Locations | Supporting hub | Strategy tips for the haystack loop. |
-| `/faq` | `src/data/pages/site-pages.ts` | Guide | Search For The Needle FAQ | Get short answers | About / Contact | Answer hub | FAQ schema enabled. |
+| `/faq` | `src/data/pages/site-pages.ts` | Guide | Search For The Needle FAQ | Get short answers | Active codes / How to play / Gamepasses | Answer hub | 8 first-visit FAQ items with FAQPage schema; links to codes, how-to-play, chapter-2, classes, gamepasses, pets, updates.
 | `/about` | `src/data/pages/site-pages.ts` | Utility | about Search For The Needle guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
 | `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Search For The Needle guide | Corrections and source updates | About | Trust | support@searchfortheneedle.pro |
 | `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
