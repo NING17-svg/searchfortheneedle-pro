@@ -515,7 +515,7 @@ export const contentPages: PageContent[] = [
     h1: "Search For The Needle updates — current build and changelog",
     seoTitle: "Search For The Needle updates — current build and changelog",
     metaDescription:
-      "Search For The Needle updates: the current Roblox universe build (2026-09-17), per-build changelog rows for the 7 prior dated builds, and what Garage Games has or has not confirmed.",
+      "Search For The Needle updates: the current Roblox universe build (2026-09-21), per-build changelog rows for the prior dated builds, the 2026-09-20 CLANS / Update 3 build row, and what Garage Games has or has not confirmed.",
     summary:
       "Patch hub for Search For The Needle: current universe build at the top, then one-line per-build rows in reverse chronological order, then the Alien Coins event block and sources.",
     hero: {
@@ -530,11 +530,11 @@ export const contentPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "The current Search For The Needle universe build is 2026-09-17T16:53:53.8051955Z, with about 50M visits, 38.5K playing, and 137K favorites on the Roblox Games API snapshot. Eight dated builds are confirmed by the Games API or third-party changelogs: 2026-09-17 current, 2026-09-15 gamepasses expansion, 2026-09-13 maintenance, 2026-09-12 Pets + Index event, 2026-09-06 API update, 2026-09-05 Chapter 2 launch, 2026-09-03 Alien visuals + Alien Coins, and 2026-08-23 universe launch.",
+      "The current Search For The Needle universe build is 2026-09-21T15:18:25Z, with about 62.9M visits, 27.9K playing, and 161K favorites on the Roblox Games API snapshot. Nine dated builds are confirmed by the Games API or third-party changelogs: 2026-09-21 current, 2026-09-20 CLANS / Update 3, 2026-09-17 prior universe build, 2026-09-15 gamepasses expansion, 2026-09-13 maintenance, 2026-09-12 Pets + Index event, 2026-09-06 API update, 2026-09-05 Chapter 2 launch, 2026-09-03 Alien visuals + Alien Coins, and 2026-08-23 universe launch.",
     keyFacts: [
-      { label: "Current build", value: "2026-09-17 (Games API `updated`)" },
+      { label: "Current build", value: "2026-09-21 (Games API `updated`)" },
       { label: "Universe created", value: "2026-08-23" },
-      { label: "Active builds recorded", value: "8 dated entries" },
+      { label: "Active builds recorded", value: "9 dated entries" },
       { label: "Creator", value: "Garage Games (group id 279288859)" },
     ],
     modules: [
@@ -543,8 +543,8 @@ export const contentPages: PageContent[] = [
         type: "callout",
         heading: "Current universe build",
         tone: "confirmed",
-        title: "2026-09-17T16:53:53.8051955Z",
-        body: "Roblox Games API `updated` for Universe 10756011174 is 2026-09-17T16:53:53.8051955Z, with the snapshot recording roughly 50M visits, 38.5K playing, and 137K favorites. This is the build timestamp to anchor every patch log line below.",
+        title: "2026-09-21T15:18:25Z",
+        body: "Roblox Games API `updated` for Universe 10756011174 is 2026-09-21T15:18:25Z, with the snapshot recording roughly 62.9M visits, 27.9K playing, and 161K favorites. This is the build timestamp to anchor every patch log line below.",
       },
       {
         id: "changelog",
@@ -557,9 +557,21 @@ export const contentPages: PageContent[] = [
         ],
         rows: [
           {
+            date: "2026-09-21",
+            summary:
+              "Current universe build (Games API `updated` 2026-09-21T15:18:25Z; ~62.9M visits / 27.9K playing / 161K favorites); no published content patch notes.",
+            links: "—",
+          },
+          {
+            date: "2026-09-20",
+            summary:
+              "CLANS / Update 3 — aggregator changelog lists the build at 2026-09-20T15:52 UTC with the '[CLANS ⚔️]' rename; no published mechanics or balance notes from Garage Games.",
+            links: "—",
+          },
+          {
             date: "2026-09-17",
             summary:
-              "Current universe build (Games API `updated`); no published patch notes.",
+              "Prior universe build (Games API `updated` 2026-09-17T16:53:53.8051955Z); no published patch notes.",
             links: "—",
           },
           {
@@ -709,10 +721,11 @@ export const contentPages: PageContent[] = [
       "fixed-search-for-the-needle-chapter-2-basement-en-US",
       "fixed-search-for-the-needle-how-to-play-en-US",
       "fixed-search-for-the-needle-pets-en-US",
+      "fixed-search-for-the-needle-currencies-en-US",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-17",
+    lastReviewed: "2026-09-23",
   },
   {
     id: "fixed-search-for-the-needle-tips-en-US",
@@ -1666,6 +1679,196 @@ export const contentPages: PageContent[] = [
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
     lastReviewed: "2026-09-17",
+  },
+  {
+    id: "fixed-search-for-the-needle-currencies-en-US",
+    translationKey: "search-for-the-needle-currencies",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "currencies",
+    url: "/currencies",
+    pageType: "guides",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Search For The Needle currencies — Cash, Gems, Diamonds, Alien Coins",
+    seoTitle: "Search For The Needle currencies — Cash, Gems, Diamonds, Alien Coins",
+    metaDescription:
+      "All four Search For The Needle currencies and what each one buys: Cash for in-round tools, Gems for class rolls and Pets, Diamonds from Prospector / Lucky Blast drops, and Alien Coins spent on Alien Chests.",
+    summary:
+      "Direct reference for the four currencies in Search For The Needle — what each one funds, where it comes from, and which decisions are per-round versus permanent.",
+    hero: {
+      eyebrow: "Currencies",
+      subtitle:
+        "Four currencies, four roles: Cash funds in-round tools, Gems fund class rolls and Pets, Diamonds drop from Prospector and Lucky Blast, Alien Coins are spent on Alien Chests.",
+      ctas: [
+        { label: "How to play", href: "/how-to-play" },
+        { label: "Classes", href: "/classes" },
+        { label: "Pets + Index", href: "/pets" },
+        { label: "Gamepasses", href: "/gamepasses" },
+        { label: "Alien event on /updates", href: "/updates#alien-event" },
+      ],
+    },
+    quickAnswer:
+      "Four currencies exist. Cash is the in-round tool currency (Pitchfork $8, Dynamite $25, Vacuum $69.99) and resets every round. Gems are the persistent premium currency — class rolls cost 40 Gems, the Dog Pet costs 1,000 Gems, the Pet Cosmetics stand restocks by the hour, and an 8-day login track grants 880 Gems. Diamonds drop from the Prospector class (+50% chance) and Lucky Blast clears with no published spend catalogue. Alien Coins are a limited-time currency introduced on 2026-09-03, earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, and spent on Alien Chests at roughly 100 coins per chest.",
+    keyFacts: [
+      { label: "Total currencies", value: "4 (Cash, Gems, Diamonds, Alien Coins)" },
+      { label: "Cash scope", value: "In-round tools, resets per round" },
+      { label: "Gems source", value: "8-day 880-Gem login track + class rolls + one-offs" },
+      { label: "Diamonds source", value: "Prospector + Lucky Blast drops" },
+      { label: "Alien Coins", value: "2026-09-03 limited-time currency" },
+      { label: "Last reviewed", value: "2026-09-23" },
+    ],
+    modules: [
+      {
+        id: "currencies-overview",
+        type: "prose",
+        heading: "Four currencies, four roles",
+        body: "Search For The Needle runs four currencies that do not convert into each other. Cash lives and dies inside a single round — every Tools & Upgrades shop closes when the round ends. Gems are the persistent premium that buys persistent progression (class rolls, Pet, Cosmetics). Diamonds are a pure drop currency with no published spend catalogue. Alien Coins are a 2026-09-03 limited-time currency that feeds Alien Chests in the lobby. Knowing which currency funds what is the first decision: the wrong currency on the wrong action wastes time you cannot recover mid-round.",
+        links: [
+          { label: "Tools & Upgrades", href: "/how-to-play#tools-overview" },
+          { label: "Classes", href: "/classes" },
+          { label: "Pets + Index", href: "/pets" },
+          { label: "Alien event block on /updates", href: "/updates#alien-event" },
+        ],
+      },
+      {
+        id: "currencies-table",
+        type: "data-table",
+        heading: "At a glance — what each currency funds",
+        columns: [
+          { key: "currency", label: "Currency" },
+          { key: "scope", label: "Scope" },
+          { key: "where", label: "Where it comes from" },
+          { key: "spend", label: "What it buys" },
+          { key: "page", label: "Detailed page" },
+        ],
+        rows: [
+          {
+            currency: "Cash",
+            scope: "Per round (resets)",
+            where: "Earned by selling hay during a round",
+            spend: "Pitchfork $8, Dynamite $25, Vacuum $69.99",
+            page: "/how-to-play",
+          },
+          {
+            currency: "Gems",
+            scope: "Permanent account balance",
+            where: "8-day 880-Gem login track, like-the-game +25, join-group +25, class roll rewards, redemption codes (CLANS / WEATHER / ALIEN each 200 Gems per aggregator agreement)",
+            spend: "Class rolls (40 Gems), Dog Pet (1,000 Gems), Pet Cosmetics stand (hourly restock), Index progression",
+            page: "/classes",
+          },
+          {
+            currency: "Diamonds",
+            scope: "Drop currency",
+            where: "Prospector class (+50% chance) and Lucky Blast trait drops",
+            spend: "No published spend catalogue",
+            page: "/classes",
+          },
+          {
+            currency: "Alien Coins",
+            scope: "Limited-time (2026-09-03 event)",
+            where: "Farmhouse / Barn / Silo round clears, Chapter 2 Basement finale, ALIEN code when active",
+            spend: "Alien Chests in the lobby (~100 coins per chest)",
+            page: "/updates",
+          },
+        ],
+      },
+      {
+        id: "cash-deep-dive",
+        type: "prose",
+        heading: "Cash — the in-round tool currency",
+        body: "Cash is the only currency that resets every round. You earn it by selling hay at the Sell Hay cart and spend it on three tools from the in-round upgrade menu: Pitchfork ($8), Dynamite ($25), and Vacuum ($69.99). Trait upgrades (Hold, Grasp, Speed, Power, Lucky Blast, Hay Drone) are free in-round rolls and do not cost Cash. The right Cash order is Pitchfork first once you can afford it, Dynamite next if your class is Demolitionist, Vacuum only when you are hunting the Chapter 2 Basement Key. The full Tools & Upgrades table and per-class pairing live on /how-to-play.",
+        links: [
+          { label: "Tools & Upgrades on /how-to-play", href: "/how-to-play#tools-overview" },
+          { label: "Classes", href: "/classes" },
+        ],
+      },
+      {
+        id: "gems-deep-dive",
+        type: "prose",
+        heading: "Gems — the persistent premium currency",
+        body: "Gems are the only currency that survives between rounds. The primary Gem source is the 8-day login track (880 Gems total — about 22 class rolls at 40 Gems each). On top of that, liking the game and joining the official Garage Games creator group each grant a one-time +25 Gems. The 2x Gems gamepass at 79 R$ doubles every Gem source for the duration of the pass. When active redemption codes ship, aggregator agreement currently lists CLANS, WEATHER, and ALIEN at 200 Gems each — always confirm the active code list on /codes before relying on this. Gems fund four currencies at different price points: class rolls (40 Gems per roll), the Dog Pet (1,000 Gems), the Pet Cosmetics stand (hourly restock weights Common 40%, Uncommon 30%, Rare 18%, Epic 9%, Legendary 3%), and the new Index progression path. Treat the Cosmetics stand as a Gem sink — see /pets for the chase strategy.",
+        links: [
+          { label: "Classes", href: "/classes" },
+          { label: "Pets + Index", href: "/pets" },
+          { label: "Gamepasses", href: "/gamepasses" },
+          { label: "Active codes", href: "/codes" },
+        ],
+      },
+      {
+        id: "diamonds-deep-dive",
+        type: "prose",
+        heading: "Diamonds — the drop currency with no published spend",
+        body: "Diamonds drop from two sources: the Prospector class (3.9% roll chance, +50% Diamond drop chance, and hay can transform into Diamonds) and the Lucky Blast trait (a free in-round roll, bonus Diamonds on hay clears). Garage Games has not published a Diamond spend catalogue as of 2026-09-23, so Diamonds currently function as a watch currency — accumulate them, but do not expect to spend them on a published shop until Garage Games publishes one.",
+        links: [
+          { label: "Classes — Prospector row", href: "/classes" },
+          { label: "Tools & Upgrades — Lucky Blast row", href: "/how-to-play#tools-table" },
+        ],
+      },
+      {
+        id: "alien-coins-deep-dive",
+        type: "prose",
+        heading: "Alien Coins — the limited-time currency (2026-09-03 event)",
+        body: "Alien Coins were introduced on the 2026-09-03 build. They are earned on Farmhouse, Barn, and Silo round clears, on Chapter 2 Basement clears (the +25 Gems reward bundles an Alien Coin drop), and additionally when the ALIEN redemption code is active. The spend target is Alien Chests in the lobby at roughly 100 coins per chest. The in-game labels call this currency both Alien Coins and Alien Chests — they refer to the same limited-time pool, not two separate currencies. Garage Games has not published an end date, so the Chest reward table is a watch item. Pull the latest Chest catalogue from the official game page or the creator group channels before committing a full Chest pull.",
+        links: [
+          { label: "Alien event block on /updates", href: "/updates#alien-event" },
+          { label: "Chapter 2 Basement walkthrough", href: "/chapter-2-basement" },
+        ],
+      },
+      {
+        id: "currencies-decision",
+        type: "steps",
+        heading: "What to spend each currency on first",
+        items: [
+          {
+            title: "Spend Cash on Pitchfork first",
+            body: "Cash resets every round, so the priority is whichever tool multiplies your current round. Buy Pitchfork ($8) the moment you can, then Dynamite ($25) if your class is Demolitionist, then Vacuum ($69.99) only on a Chapter 2 Basement Key hunt.",
+            doneCondition: "You buy Pitchfork on the first round you can afford it and Dynamite on the next.",
+          },
+          {
+            title: "Spend Gems on class rolls or the Dog Pet",
+            body: "The 8-day 880-Gem login track grants about 22 rolls. Spend on class rolls until you hit Pack Mule (25%) or Hay Merchant (14%), or save 1,000 Gems for the Dog Pet if you prefer the free-track pet over the 499 R$ Cow Pet pass.",
+            doneCondition: "You have a target class or the Dog Pet and stop spending Gems until the next login cycle.",
+          },
+          {
+            title: "Accumulate Diamonds until a spend catalogue is published",
+            body: "Diamonds drop from Prospector and Lucky Blast. Garage Games has not published a spend table, so accumulate them — do not treat them as a current-game spend currency.",
+            doneCondition: "You stop checking for a Diamond shop and wait for Garage Games to publish one.",
+          },
+          {
+            title: "Spend Alien Coins on Alien Chests while the event is open",
+            body: "Alien Coins spend at roughly 100 coins per Alien Chest. The event end date is not published, so commit a Chest pull only after you confirm the event is still active on /updates.",
+            doneCondition: "You pull Alien Chests only after the dated /updates status confirms the event is still live.",
+          },
+        ],
+      },
+      {
+        id: "currencies-faq-block",
+        type: "callout",
+        heading: "Currencies at a glance — what to track",
+        tone: "tip",
+        title: "Three currency questions",
+        body: "How much Cash do you need to start buying tools? At least $8 for Pitchfork. How many Gems do you need to roll a class? 40 Gems per roll. How many Alien Coins does one Alien Chest cost? Roughly 100 coins. If you only remember these three numbers, you can make every currency decision in a round.",
+      },
+    ],
+    faqIds: [
+      "currencies-how-many",
+      "currencies-cash-reset",
+      "currencies-gems-first-spend",
+      "currencies-diamonds-spend",
+      "currencies-alien-coins-end",
+      "currencies-codes-gems",
+    ],
+    relatedPageIds: [
+      "fixed-search-for-the-needle-how-to-play-en-US",
+      "fixed-search-for-the-needle-classes-en-US",
+      "fixed-search-for-the-needle-pets-en-US",
+      "fixed-search-for-the-needle-gamepasses-en-US",
+      "fixed-search-for-the-needle-updates-en-US",
+      "fixed-search-for-the-needle-chapter-2-basement-en-US",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-23",
   },
   {
     id: "guides",

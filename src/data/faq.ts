@@ -666,4 +666,66 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "official",
   },
+
+  // /currencies FAQs
+  {
+    id: "currencies-how-many",
+    question: "How many currencies does Search For The Needle have?",
+    answer:
+      "Four. Cash is the in-round tool currency (Pitchfork $8, Dynamite $25, Vacuum $69.99, resets every round). Gems are the persistent premium that funds class rolls (40 Gems), the Dog Pet (1,000 Gems), Pet Cosmetics, and the Index. Diamonds drop from the Prospector class and Lucky Blast trait and have no published spend catalogue. Alien Coins are a limited-time currency introduced on 2026-09-03, earned on Farmhouse / Barn / Silo round clears and Chapter 2 Basement clears, spent on Alien Chests at roughly 100 coins per chest. See /currencies for the full breakdown.",
+    pageIds: ["fixed-search-for-the-needle-currencies-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "currencies-cash-reset",
+    question: "Does Cash in Search For The Needle carry over between rounds?",
+    answer:
+      "No. Cash is the in-round tool currency and resets to zero at the end of every round. Spend it on Pitchfork ($8) the moment you can, then Dynamite ($25) if your class is Demolitionist, then Vacuum ($69.99) only on a Chapter 2 Basement Key hunt — Cash you hold at the end of a round is lost.",
+    pageIds: ["fixed-search-for-the-needle-currencies-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "currencies-gems-first-spend",
+    question: "What should I spend Gems on first in Search For The Needle?",
+    answer:
+      "Spend Gems on class rolls (40 Gems per roll at the Classes booth) until you hit Pack Mule (25%) or Hay Merchant (14%), or save 1,000 Gems for the Dog Pet if you want the free-track pet. The 8-day login track grants about 880 Gems (≈22 rolls), plus one-off +25 Gems each for liking the game and joining the Garage Games creator group.",
+    pageIds: ["fixed-search-for-the-needle-currencies-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "currencies-diamonds-spend",
+    question: "What do Diamonds buy in Search For The Needle?",
+    answer:
+      "Nothing published. Diamonds drop from the Prospector class (+50% drop chance and hay can transform into Diamonds) and from the Lucky Blast trait. Garage Games has not published a Diamond spend catalogue as of 2026-09-23, so accumulate them until an official spend shop is announced on the Roblox game page or the creator group channels.",
+    pageIds: ["fixed-search-for-the-needle-currencies-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "currencies-alien-coins-end",
+    question: "When does the Search For The Needle Alien Coins event end?",
+    answer:
+      "Not publicly published. Alien Coins and Alien Chests were introduced on the 2026-09-03 build and Garage Games has not announced an end date for the event window or for Alien Coin / Alien Chest availability. Spend Alien Coins at roughly 100 coins per Alien Chest while the event is still active — confirm the dated status on /updates before committing a full Chest pull.",
+    pageIds: ["fixed-search-for-the-needle-currencies-en-US"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "currencies-codes-gems",
+    question: "Do Search For The Needle codes give Gems?",
+    answer:
+      "When active redemption codes ship, aggregator agreement currently lists CLANS, WEATHER, and ALIEN at 200 Gems each, and ALIEN also bundles a small Alien Coin grant. Garage Games has not published any active codes as of 2026-09-23 — check the /codes page for the current dated status before relying on a code reward.",
+    pageIds: ["fixed-search-for-the-needle-currencies-en-US"],
+    category: "site",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
 ];

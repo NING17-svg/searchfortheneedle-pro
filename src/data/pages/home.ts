@@ -29,12 +29,12 @@ export const homePage: PageContent = {
     ],
   },
   quickAnswer:
-    "Search For The Needle is a cozy Roblox haystack search game (Universe 10756011174 by Garage Games) where players search giant haystacks to find a hidden needle and beat their best time. This hub orients first-time players to active codes, haystack locations, tips, the 9 gamepasses, Tools & Upgrades, Pets + Cosmetics, the Alien event & Alien Coins, and the latest patch notes.",
+    "Search For The Needle is a cozy Roblox haystack search game (Universe 10756011174 by Garage Games) where players search giant haystacks to find a hidden needle and beat their best time. This hub orients first-time players to active codes, haystack locations, tips, the 9 gamepasses, Tools & Upgrades, Pets + Cosmetics, the Alien event & Alien Coins, the four currencies, and the latest patch notes.",
   keyFacts: [
     { label: "Universe ID", value: "10756011174" },
     { label: "Place ID", value: "77108422251420" },
     { label: "Created", value: "2026-08-23" },
-    { label: "Last updated", value: "2026-09-17" },
+    { label: "Last updated", value: "2026-09-21" },
     { label: "Creator", value: "Garage Games (group id 279288859)" },
   ],
   modules: [
@@ -42,7 +42,7 @@ export const homePage: PageContent = {
       id: "home-intro",
       type: "prose",
       heading: "What Search For The Needle is right now",
-      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 17, 2026 (the current universe build, with roughly 50M visits, 38.5K playing, and 137K favorites on the snapshot). This hub orients first-time players to active codes, haystack locations, haystack search tips, the in-round Tools & Upgrades order, the 9 gamepasses, Pets + Cosmetics, the Alien event & Alien Coins, and the latest patch notes in one place.",
+      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 21, 2026 (the current universe build, with roughly 62.9M visits, 27.9K playing, and 161K favorites on the snapshot; the 2026-09-20 CLANS / Update 3 row is now in the changelog with no published mechanics). This hub orients first-time players to active codes, haystack locations, haystack search tips, the in-round Tools & Upgrades order, the 9 gamepasses, Pets + Cosmetics, the four currencies (Cash, Gems, Diamonds, Alien Coins), the Alien event & Alien Coins, and the latest patch notes in one place.",
       links: [
         {
           label: "Official Search For The Needle Roblox game page",
@@ -92,13 +92,18 @@ export const homePage: PageContent = {
           href: "/pets",
         },
         {
+          title: "Currencies",
+          summary: "What each of the four currencies (Cash, Gems, Diamonds, Alien Coins) actually funds.",
+          href: "/currencies",
+        },
+        {
           title: "Haystack locations",
           summary: "Officially documented haystack areas and what is Not announced as of 2026-09-14.",
           href: "/locations",
         },
         {
           title: "Updates",
-          summary: "Latest build timestamp and what Garage Games has confirmed.",
+          summary: "Latest build timestamp and the full reverse-chronological changelog.",
           href: "/updates",
         },
         {
@@ -112,7 +117,7 @@ export const homePage: PageContent = {
       id: "home-faq",
       type: "prose",
       heading: "Frequently asked questions",
-      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-17. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses. What is the Alien event? It is the 2026-09-03 build that added Alien visuals and Alien Coins; Alien Coins are earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, and spent on Alien Chests in the lobby at roughly 100 coins per chest — see /updates for the full block.",
+      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-21. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses. What is the Alien event? It is the 2026-09-03 build that added Alien visuals and Alien Coins; Alien Coins are earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, and spent on Alien Chests in the lobby at roughly 100 coins per chest — see /updates for the full block. What are the four currencies? Cash (in-round tools, resets per round), Gems (class rolls, Dog Pet, Cosmetics, Index), Diamonds (Prospector + Lucky Blast drops, no published spend catalogue), Alien Coins (limited-time, spent on Alien Chests) — see /currencies.",
       links: [
         { label: "Active codes", href: "/codes" },
         { label: "How to play", href: "/how-to-play" },
@@ -120,6 +125,7 @@ export const homePage: PageContent = {
         { label: "Classes", href: "/classes" },
         { label: "Gamepasses", href: "/gamepasses" },
         { label: "Pets + Index", href: "/pets" },
+        { label: "Currencies", href: "/currencies" },
         { label: "Haystack locations", href: "/locations" },
         { label: "Updates", href: "/updates" },
         { label: "Tips", href: "/tips" },
@@ -134,13 +140,14 @@ export const homePage: PageContent = {
     "fixed-search-for-the-needle-classes-en-US",
     "fixed-search-for-the-needle-gamepasses-en-US",
     "fixed-search-for-the-needle-pets-en-US",
+    "fixed-search-for-the-needle-currencies-en-US",
     "fixed-search-for-the-needle-locations-en-US",
     "fixed-search-for-the-needle-updates-en-US",
     "fixed-search-for-the-needle-tips-en-US",
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "official",
-  lastReviewed: "2026-09-17",
+  lastReviewed: "2026-09-23",
 };
 
 export const homeSiteRef = site;

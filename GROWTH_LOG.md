@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-23 - /currencies page + /updates CLANS / Update 3 build row
+
+- Task: Two content-updater tasks batched together. Add `/currencies` (a new fixed page enumerating Cash, Gems, Diamonds, Alien Coins — what each funds, where it comes from, which decisions are per-round vs permanent, cross-linked to /how-to-play, /classes, /pets, /gamepasses, /updates). Refresh /updates to lead with the 2026-09-21T15:18:25Z current universe build (~62.9M visits / 27.9K playing / 161K favorites) plus a new 2026-09-20T15:52 UTC CLANS / Update 3 changelog row with the aggregator-observed '[CLANS ⚔️]' rename and 'no published mechanics' caveat. Mirror the same universe build snapshot on the homepage and add the /currencies tile to the homepage Start-here grid.
+- Files changed: `src/data/pages/content-pages.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `src/data/navigation.ts`, `CONTENT_INDEX.md`.
+- URLs affected: New `/currencies` (overview table + four per-currency deep-dive modules + decision steps + 6 FAQ items + 6 related guide links); `/updates` current-build block + 9-row changelog (new 2026-09-20 CLANS row); `/` universe intro + Start-here grid + FAQ prose.
+- SEO/GEO changed: New `/currencies` page with FAQPage schema; 6 new FAQ entries; primary navigation gains a Currencies entry; broader internal-link coverage between hub pages. Last reviewed on /updates and / updated to 2026-09-23; homepage universe intro and FAQ prose mirror the 2026-09-21 universe snapshot.
+- Browser baseline: No theme, asset, page-shell, or guide-module changes.
+- Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
+
 ### 2026-09-20 - /faq Player Onboarding FAQ hub
 
 - Task: Replace the /faq editorial-policy stub with a real Player Onboarding FAQ that mirrors the 5-6 homepage FAQ entries (what is SFN, is it free, when did it launch, where to find active codes, which gamepass to buy first, what is the Alien event) and adds 2 new questions on the daily login Gems track and the generic haystack sweep strategy. Each answer is 1-3 sentences with the link-out moved to the page-level related links so the FAQ acts as a true hub.
