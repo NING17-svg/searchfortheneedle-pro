@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-24 - /updates CLANS mechanics block + 2026-09-23 universe build refresh
+
+- Task: Batch content-updater task. Refresh /updates to lead with the current 2026-09-23T17:17:25.0998622Z Roblox Games API universe build (66,115,826 visits / 22,530 playing / 167,083 favorites), add a new top-of-changelog row for the 2026-09-22T16:24 UTC CLANS mechanics follow-up build (create at 500 Gems + name + tag, daily clan quests, 10 Clan Tokens = 1 Clan Chest per member at week's end, six-drop chest table totalling 100%), surface the aggregator codes panel shift on the 2026-09-20 CLANS / Update 3 row summary (CLANS verified at 200 Gems, WEATHER reported at 120 Gems, PETS off the active list, ALIEN disputed), add a one-line Chapter 3 calendar anchor (2026-09-26 17:30 UTC, event id 8683070328009785940) under the 2026-09-05 row, and mirror the 2026-09-23 snapshot on the homepage.
+- Files changed: `src/data/pages/content-pages.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: /updates (current-build callout refreshed, 11-row changelog, new CLANS mechanics prose + chest table + create-cost table + first-party-pending callout), / (keyFacts + home-intro + FAQ prose mirror the 2026-09-23 snapshot and reference the CLANS loop), 4 new FAQ items on /updates (clans-create-cost, clans-token-to-chest, clans-chest-table, chapter-3-window), existing /updates FAQ timestamps refreshed to 2026-09-24.
+- SEO/GEO changed: /updates meta description and Quick Answer now lead with the 2026-09-23 build snapshot plus the 2026-09-22 CLANS follow-up row; homepage keyFacts carry the new snapshot; new FAQ ids (updates-clans-create-cost, updates-clans-token-to-chest, updates-clans-chest-table, updates-chapter-3-window) attached to /updates.
+- Browser baseline: No theme, asset, page-shell, or guide-module changes.
+- Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
+
 ### 2026-09-23 - /currencies page + /updates CLANS / Update 3 build row
 
 - Task: Two content-updater tasks batched together. Add `/currencies` (a new fixed page enumerating Cash, Gems, Diamonds, Alien Coins — what each funds, where it comes from, which decisions are per-round vs permanent, cross-linked to /how-to-play, /classes, /pets, /gamepasses, /updates). Refresh /updates to lead with the 2026-09-21T15:18:25Z current universe build (~62.9M visits / 27.9K playing / 161K favorites) plus a new 2026-09-20T15:52 UTC CLANS / Update 3 changelog row with the aggregator-observed '[CLANS ⚔️]' rename and 'no published mechanics' caveat. Mirror the same universe build snapshot on the homepage and add the /currencies tile to the homepage Start-here grid.

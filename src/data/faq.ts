@@ -26,7 +26,7 @@ export const faqItems: FAQItem[] = [
     id: "home-release-date",
     question: "When did Search For The Needle come out on Roblox?",
     answer:
-      "The Roblox Universe 10756011174 was created on 2026-08-23 and made publicly playable on the same day according to the official Roblox game page and the Roblox Games API created timestamp. The last update recorded by the Roblox Games API is 2026-09-13.",
+      "The Roblox Universe 10756011174 was created on 2026-08-23 and made publicly playable on the same day according to the official Roblox game page and the Roblox Games API created timestamp. The current universe build is 2026-09-23T17:17:25.0998622Z (66,115,826 visits / 22,530 playing / 167,083 favorites), and the most recent changelog row is the 2026-09-22T16:24 UTC CLANS mechanics follow-up build.",
     pageIds: ["home-en-US"],
     category: "release",
     schemaEligible: true,
@@ -184,7 +184,7 @@ export const faqItems: FAQItem[] = [
     id: "updates-latest",
     question: "When was the latest Search For The Needle update?",
     answer:
-      "The latest Search For The Needle update recorded by the official Roblox Games API entry for Universe 10756011174 is 2026-09-13T19:41:24.6568937Z at the snapshot. Garage Games has not published a written changelog entry for that build as of 2026-09-14.",
+      "The latest Search For The Needle universe build recorded by the official Roblox Games API entry for Universe 10756011174 is 2026-09-23T17:17:25.0998622Z (66,115,826 visits / 22,530 playing / 167,083 favorites). The most recent published changelog row is 2026-09-22T16:24 UTC for the CLANS mechanics follow-up build. Garage Games has not yet published a first-party patch log for the CLANS follow-up as of 2026-09-24.",
     pageIds: ["fixed-search-for-the-needle-updates-en-US"],
     category: "release",
     schemaEligible: true,
@@ -194,7 +194,7 @@ export const faqItems: FAQItem[] = [
     id: "updates-where-notes",
     question: "Where are the official Search For The Needle patch notes?",
     answer:
-      "Patch notes, when they exist, are published on the official Roblox game page and on Garage Games' official creator group channels (group id 279288859). As of 2026-09-14 Garage Games has not published a written patch log for the 2026-09-13 build.",
+      "Patch notes, when they exist, are published on the official Roblox game page and on Garage Games' official creator group channels (group id 279288859). As of 2026-09-24 Garage Games has not yet published a first-party written patch log for either the 2026-09-23 universe build or the 2026-09-22T16:24 UTC CLANS follow-up build; the published reversechronological changelog above is sourced from the Games API timestamp and third-party aggregators.",
     pageIds: ["fixed-search-for-the-needle-updates-en-US"],
     category: "release",
     schemaEligible: true,
@@ -204,7 +204,7 @@ export const faqItems: FAQItem[] = [
     id: "updates-new-haystack-area",
     question: "Did the latest patch add a new haystack area?",
     answer:
-      "Not announced as of 2026-09-14. The 2026-09-13 build timestamp is confirmed, but Garage Games has not confirmed whether the build introduced a new haystack area, a new needle category, or a limited-time event. See the /locations page for the current haystack area status.",
+      "Not announced as of 2026-09-24. The 2026-09-23 universe build and the 2026-09-22T16:24 UTC CLANS follow-up build timestamps are both confirmed, but Garage Games has not confirmed whether either build introduced a new haystack area, a new needle category, or a new limited-time event. See the /locations page for the current haystack area status.",
     pageIds: ["fixed-search-for-the-needle-updates-en-US"],
     category: "release",
     schemaEligible: true,
@@ -214,7 +214,7 @@ export const faqItems: FAQItem[] = [
     id: "updates-limited-events",
     question: "Are there any limited-time Search For The Needle events running right now?",
     answer:
-      "Not announced as of 2026-09-14. Garage Games has not published a holiday haystack, anniversary round, or double-needle weekend alongside the latest build. Check Garage Games' official creator channels for the first signal of any future limited-time event.",
+      "The Alien event (2026-09-03) and the Pets + Index event (2026-09-12) remain the two named limited-time mechanics on /updates. As of 2026-09-24 Garage Games has not announced a holiday haystack, anniversary round, or double-needle weekend alongside the 2026-09-23 or 2026-09-22 builds. A Chapter 3 release window is on the calendar for 2026-09-26 17:30 UTC (event id 8683070328009785940) but no place id or objectives have been published.",
     pageIds: ["fixed-search-for-the-needle-updates-en-US"],
     category: "release",
     schemaEligible: true,
@@ -555,6 +555,48 @@ export const faqItems: FAQItem[] = [
     question: "When does the Search For The Needle Alien event end?",
     answer:
       "Not publicly published. Garage Games has not announced an end date for the Alien event window or for Alien Coin / Alien Chest availability. Treat any \"event ends on X date\" claim you see in third-party posts as unconfirmed until the official Roblox game page description or a creator-group post locks it in.",
+    pageIds: ["fixed-search-for-the-needle-updates-en-US"],
+    category: "release",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // /updates CLANS mechanics FAQs
+  {
+    id: "updates-clans-create-cost",
+    question: "How much does it cost to create a clan in Search For The Needle?",
+    answer:
+      "Creating a clan in the 2026-09-22T16:24 UTC CLANS follow-up build costs 500 Gems, plus a clan name and a clan tag picked at the CLANS booth. The 500-Gem create cost is reported from third-party aggregator sources and has not yet been confirmed by Garage Games in a published patch log.",
+    pageIds: ["fixed-search-for-the-needle-updates-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "updates-clans-token-to-chest",
+    question: "How many Clan Tokens does it take to open a Clan Chest in Search For The Needle?",
+    answer:
+      "10 Clan Tokens convert into 1 Clan Chest per clan member at the end of the week. Clan Tokens are earned from daily clan quests; per-quest token rates have not been first-party published, so treat the exact daily token earnings as reported only.",
+    pageIds: ["fixed-search-for-the-needle-updates-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "updates-clans-chest-table",
+    question: "What drops from a Search For The Needle Clan Chest?",
+    answer:
+      "Clan Chests pull from a six-drop table that totals 100% (per third-party aggregators): 50-75 Gems at 65%, 100-225 Gems at 27.3%, Viking Hat at 2.7%, Clan Pitchfork at 1.6%, Clan Dynamite at 1.6%, Clan Vacuum at 1.6%. A 0.5% Sparttan-Hat is reported as the rarest drop on dujseks5cqq0r.cloudfront.net but has not been first-party confirmed.",
+    pageIds: ["fixed-search-for-the-needle-updates-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "updates-chapter-3-window",
+    question: "When does Search For The Needle Chapter 3 release?",
+    answer:
+      "The Chapter 3 release window on the /updates calendar is 2026-09-26 17:30 UTC (event id 8683070328009785940). Garage Games has not published a place id or objectives for Chapter 3, so treat the window as the launch trigger until first-party confirmation locks the exact minute in.",
     pageIds: ["fixed-search-for-the-needle-updates-en-US"],
     category: "release",
     schemaEligible: true,

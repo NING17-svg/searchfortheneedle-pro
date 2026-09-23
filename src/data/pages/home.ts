@@ -34,7 +34,10 @@ export const homePage: PageContent = {
     { label: "Universe ID", value: "10756011174" },
     { label: "Place ID", value: "77108422251420" },
     { label: "Created", value: "2026-08-23" },
-    { label: "Last updated", value: "2026-09-21" },
+    { label: "Last updated", value: "2026-09-23T17:17:25.0998622Z" },
+    { label: "Live snapshot", value: "66,115,826 visits / 22,530 playing / 167,083 favorites" },
+    { label: "Next-dated row", value: "2026-09-22T16:24 UTC — CLANS mechanics follow-up build" },
+    { label: "Chapter 3 window", value: "2026-09-26 17:30 UTC (event id 8683070328009785940)" },
     { label: "Creator", value: "Garage Games (group id 279288859)" },
   ],
   modules: [
@@ -42,7 +45,7 @@ export const homePage: PageContent = {
       id: "home-intro",
       type: "prose",
       heading: "What Search For The Needle is right now",
-      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and was last updated on September 21, 2026 (the current universe build, with roughly 62.9M visits, 27.9K playing, and 161K favorites on the snapshot; the 2026-09-20 CLANS / Update 3 row is now in the changelog with no published mechanics). This hub orients first-time players to active codes, haystack locations, haystack search tips, the in-round Tools & Upgrades order, the 9 gamepasses, Pets + Cosmetics, the four currencies (Cash, Gems, Diamonds, Alien Coins), the Alien event & Alien Coins, and the latest patch notes in one place.",
+      body: "Search For The Needle is a cozy Roblox haystack search game where players dig through giant piles of hay to find a single hidden needle and beat their best time. The current Roblox Universe (ID 10756011174) was created by the Garage Games creator group on August 23, 2026 and the current universe build is 2026-09-23T17:17:25.0998622Z, with 66,115,826 visits, 22,530 playing, and 167,083 favorites on the snapshot. The freshest dated changelog row is 2026-09-22T16:24 UTC for the CLANS mechanics follow-up build (create at 500 Gems + name + tag, daily clan quests, 10 Clan Tokens = 1 Clan Chest per member at week's end, six-drop chest table totalling 100%); the 2026-09-20 CLANS / Update 3 row carries the codes panel shift (CLANS verified at 200 Gems, WEATHER reported at 120 Gems, PETS off the active list, ALIEN disputed). A Chapter 3 release window sits on the calendar at 2026-09-26 17:30 UTC (event id 8683070328009785940). This hub orients first-time players to active codes, haystack locations, haystack search tips, the in-round Tools & Upgrades order, the 9 gamepasses, Pets + Cosmetics, the four currencies (Cash, Gems, Diamonds, Alien Coins), the Alien event & Alien Coins, the CLANS in-game loop, and the latest patch notes in one place.",
       links: [
         {
           label: "Official Search For The Needle Roblox game page",
@@ -117,7 +120,7 @@ export const homePage: PageContent = {
       id: "home-faq",
       type: "prose",
       heading: "Frequently asked questions",
-      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and last updated on 2026-09-21. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses. What is the Alien event? It is the 2026-09-03 build that added Alien visuals and Alien Coins; Alien Coins are earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, and spent on Alien Chests in the lobby at roughly 100 coins per chest — see /updates for the full block. What are the four currencies? Cash (in-round tools, resets per round), Gems (class rolls, Dog Pet, Cosmetics, Index), Diamonds (Prospector + Lucky Blast drops, no published spend catalogue), Alien Coins (limited-time, spent on Alien Chests) — see /currencies.",
+      body: "What is Search For The Needle on Roblox? It is a cozy Roblox haystack search game created by Garage Games (Universe ID 10756011174, Place ID 77108422251420). Is it free to play? Yes — open the official Roblox game page and launch it from your account. When did it come out? Universe 10756011174 was created on 2026-08-23 and the current universe build is 2026-09-23T17:17:25.0998622Z (66,115,826 visits / 22,530 playing / 167,083 favorites) with a fresh 2026-09-22T16:24 UTC CLANS mechanics follow-up changelog row. Where do I find active codes? Garage Games publishes codes on the official game page and on the creator group channels; the aggregator panel currently lists CLANS at 200 Gems (verified), WEATHER at 120 Gems (reported), PETS off the active list, and ALIEN disputed — see the /codes page for the current dated status. Which gamepass is worth buying first? Permanent Bag at 99 R$, then 2x Class Luck if you roll classes — see /gamepasses. What is the Alien event? It is the 2026-09-03 build that added Alien visuals and Alien Coins; Alien Coins are earned on Farmhouse / Barn / Silo round clears and on Chapter 2 Basement clears, and spent on Alien Chests in the lobby at roughly 100 coins per chest — see /updates for the full block. What is the CLANS loop? The 2026-09-22T16:24 UTC follow-up build publishes clan creation at 500 Gems, daily clan quests that pay Clan Tokens, and a 10-Clan-Token = 1-Clan-Chest conversion at week's end with the six-drop chest table — see /updates#clans-mechanics. What are the four currencies? Cash (in-round tools, resets per round), Gems (class rolls, Dog Pet, Cosmetics, Index), Diamonds (Prospector + Lucky Blast drops, no published spend catalogue), Alien Coins (limited-time, spent on Alien Chests) — see /currencies.",
       links: [
         { label: "Active codes", href: "/codes" },
         { label: "How to play", href: "/how-to-play" },
@@ -147,7 +150,7 @@ export const homePage: PageContent = {
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "official",
-  lastReviewed: "2026-09-23",
+  lastReviewed: "2026-09-24",
 };
 
 export const homeSiteRef = site;

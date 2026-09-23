@@ -515,13 +515,13 @@ export const contentPages: PageContent[] = [
     h1: "Search For The Needle updates — current build and changelog",
     seoTitle: "Search For The Needle updates — current build and changelog",
     metaDescription:
-      "Search For The Needle updates: the current Roblox universe build (2026-09-21), per-build changelog rows for the prior dated builds, the 2026-09-20 CLANS / Update 3 build row, and what Garage Games has or has not confirmed.",
+      "Search For The Needle updates: the current Roblox universe build (2026-09-23, ~66.1M visits / 22.5K playing / 167K favorites), the new 2026-09-22T16:24 UTC CLANS mechanics row, the Chapter 3 release window (2026-09-26 17:30 UTC), the 2026-09-20 CLANS / Update 3 build row, and what Garage Games has or has not confirmed.",
     summary:
-      "Patch hub for Search For The Needle: current universe build at the top, then one-line per-build rows in reverse chronological order, then the Alien Coins event block and sources.",
+      "Patch hub for Search For The Needle: current universe build at the top, then one-line per-build rows in reverse chronological order, then the full CLANS mechanics block, the Alien Coins event block, and sources.",
     hero: {
       eyebrow: "Updates",
       subtitle:
-        "Current universe build at the top, one-line changelog rows for every dated build, and the Alien event & Alien Coins block.",
+        "Current universe build at the top, one-line changelog rows for every dated build, the full CLANS mechanics block, and the Alien event & Alien Coins block.",
       ctas: [
         { label: "Active codes", href: "/codes" },
         { label: "Chapter 2 Basement", href: "/chapter-2-basement" },
@@ -530,11 +530,14 @@ export const contentPages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "The current Search For The Needle universe build is 2026-09-21T15:18:25Z, with about 62.9M visits, 27.9K playing, and 161K favorites on the Roblox Games API snapshot. Nine dated builds are confirmed by the Games API or third-party changelogs: 2026-09-21 current, 2026-09-20 CLANS / Update 3, 2026-09-17 prior universe build, 2026-09-15 gamepasses expansion, 2026-09-13 maintenance, 2026-09-12 Pets + Index event, 2026-09-06 API update, 2026-09-05 Chapter 2 launch, 2026-09-03 Alien visuals + Alien Coins, and 2026-08-23 universe launch.",
+      "The current Search For The Needle universe build is 2026-09-23T17:17:25.0998622Z, with about 66,115,826 visits, 22,530 playing, and 167,083 favorites on the Roblox Games API snapshot. The freshest dated changelog row is 2026-09-22T16:24 UTC for the CLANS follow-up build, which ships the full CLANS mechanics loop (create at 500 Gems, daily Clan quests, 10 Clan Tokens = 1 Clan Chest per member at week's end, six-drop chest table totalling 100%). A Chapter 3 release window is on the calendar for 2026-09-26 17:30 UTC. Ten dated builds are now confirmed by the Games API or third-party changelogs: 2026-09-23 current universe build, 2026-09-22 CLANS mechanics follow-up, 2026-09-21 prior universe build, 2026-09-20 CLANS / Update 3, 2026-09-17 prior universe build, 2026-09-15 gamepasses expansion, 2026-09-13 maintenance, 2026-09-12 Pets + Index event, 2026-09-06 API update, 2026-09-05 Chapter 2 launch, 2026-09-03 Alien visuals + Alien Coins, and 2026-08-23 universe launch.",
     keyFacts: [
-      { label: "Current build", value: "2026-09-21 (Games API `updated`)" },
+      { label: "Current build", value: "2026-09-23T17:17:25.0998622Z (Games API `updated`)" },
+      { label: "Live snapshot", value: "66,115,826 visits / 22,530 playing / 167,083 favorites" },
+      { label: "Next-dated row", value: "2026-09-22T16:24 UTC — CLANS mechanics follow-up build" },
+      { label: "Chapter 3 window", value: "2026-09-26 17:30 UTC (event id 8683070328009785940)" },
       { label: "Universe created", value: "2026-08-23" },
-      { label: "Active builds recorded", value: "9 dated entries" },
+      { label: "Active builds recorded", value: "12 dated entries (10 published + 2 API-only)" },
       { label: "Creator", value: "Garage Games (group id 279288859)" },
     ],
     modules: [
@@ -543,8 +546,8 @@ export const contentPages: PageContent[] = [
         type: "callout",
         heading: "Current universe build",
         tone: "confirmed",
-        title: "2026-09-21T15:18:25Z",
-        body: "Roblox Games API `updated` for Universe 10756011174 is 2026-09-21T15:18:25Z, with the snapshot recording roughly 62.9M visits, 27.9K playing, and 161K favorites. This is the build timestamp to anchor every patch log line below.",
+        title: "2026-09-23T17:17:25.0998622Z",
+        body: "Roblox Games API `updated` for Universe 10756011174 is 2026-09-23T17:17:25.0998622Z, with the snapshot returning 66,115,826 visits, 22,530 playing, and 167,083 favorites. This is the build timestamp to anchor every patch log line below. The previous universe build at 2026-09-21T15:18:25Z (~62.9M visits / 27.9K playing / 161K favorites) is the prior row in the changelog.",
       },
       {
         id: "changelog",
@@ -557,16 +560,28 @@ export const contentPages: PageContent[] = [
         ],
         rows: [
           {
+            date: "2026-09-23",
+            summary:
+              "Current universe build (Games API `updated` 2026-09-23T17:17:25.0998622Z; 66,115,826 visits / 22,530 playing / 167,083 favorites); no published content patch notes.",
+            links: "—",
+          },
+          {
+            date: "2026-09-22",
+            summary:
+              "CLANS mechanics follow-up build (aggregator records 2026-09-22T16:24 UTC) — publishes the full CLANS in-game loop (create at 500 Gems + name + tag, daily Clan quests, 10 Clan Tokens = 1 Clan Chest per member at week's end, six-drop chest table totalling 100%); first-party Garage Games confirmation still pending.",
+            links: "/updates#clans-mechanics",
+          },
+          {
             date: "2026-09-21",
             summary:
-              "Current universe build (Games API `updated` 2026-09-21T15:18:25Z; ~62.9M visits / 27.9K playing / 161K favorites); no published content patch notes.",
+              "Prior universe build (Games API `updated` 2026-09-21T15:18:25Z; ~62.9M visits / 27.9K playing / 161K favorites); no published content patch notes.",
             links: "—",
           },
           {
             date: "2026-09-20",
             summary:
-              "CLANS / Update 3 — aggregator changelog lists the build at 2026-09-20T15:52 UTC with the '[CLANS ⚔️]' rename; no published mechanics or balance notes from Garage Games.",
-            links: "—",
+              "CLANS / Update 3 — aggregator changelog lists the build at 2026-09-20T15:52 UTC with the '[CLANS ⚔️]' rename. Aggregator codes panel shifted: CLANS verified at 200 Gems with a recorded in-game redemption, WEATHER reported (shifted down) at 120 Gems, PETS moved off the active codes list, and ALIEN is currently flagged Reported/expired with a disputed 200 Gems + 200 Alien Coins bundle vs an Alien Chests reward label. No first-party Garage Games statement confirms which of those strings are still redeemable.",
+            links: "/codes",
           },
           {
             date: "2026-09-17",
@@ -599,6 +614,12 @@ export const contentPages: PageContent[] = [
             links: "—",
           },
           {
+            date: "2026-09-26 (calendar)",
+            summary:
+              "Chapter 3 release window — 2026-09-26 17:30 UTC (event id 8683070328009785940); treat as the launch window until first-party confirmation locks the exact minute in.",
+            links: "/chapter-2-basement",
+          },
+          {
             date: "2026-09-05",
             summary:
               "Chapter 2 launch — Place 83445806734780 added; Basement Key + 3 Levers + 3 Puzzles + UFO escape; +25 Gems reward.",
@@ -617,6 +638,115 @@ export const contentPages: PageContent[] = [
             links: "/how-to-play",
           },
         ],
+      },
+      {
+        id: "clans-mechanics",
+        type: "prose",
+        heading: "CLANS mechanics block (2026-09-22T16:24 UTC follow-up build)",
+        body: "The 2026-09-22T16:24 UTC follow-up build publishes the full CLANS in-game loop. Create a clan for 500 Gems plus a clan name and a clan tag, then farm Clan Tokens from daily clan quests. Each clan member's 10 Clan Tokens convert into 1 Clan Chest for that member at the end of the week; the chest pulls from a six-drop table that totals 100%. Three of the six drops are Clan-only items (Viking Hat, Clan Pitchfork, Clan Dynamite, Clan Vacuum). Third-party aggregator sources additionally attest a 0.5% Sparttan-Hat drop as the rarest chest outcome — that figure has not been confirmed by Garage Games, so treat it as reported rather than published. First-party Garage Games confirmation of the chest table is still pending as of 2026-09-24; the /codes page mirrors the codes panel shift (CLANS verified at 200 Gems, WEATHER reported at 120 Gems, PETS off the active list, ALIEN disputed) and stays honest about the partial answer boundary.",
+        links: [
+          {
+            label: "Aggregator CLANS guide",
+            href: "https://dujseks5cqq0r.cloudfront.net/roblox-news/search-needle-clans-guide",
+            description: "Six-drop Clan Chest table and the 0.5% Sparttan-Hat attestation.",
+          },
+          {
+            label: "Aggregator codes panel",
+            href: "https://allthings.how/search-for-the-needle-codes/",
+            description: "CLANS verified at 200 Gems, WEATHER 120 Gems, ALIEN disputed.",
+          },
+          {
+            label: "Active codes page",
+            href: "/codes",
+            description: "Same code status with the no-active-codes caveat preserved.",
+          },
+        ],
+      },
+      {
+        id: "clans-mechanics-table",
+        type: "data-table",
+        heading: "Clan Chest drop table (six drops, totals 100%)",
+        columns: [
+          { key: "drop", label: "Drop" },
+          { key: "rate", label: "Rate" },
+          { key: "source", label: "Source" },
+        ],
+        rows: [
+          {
+            drop: "50-75 Gems",
+            rate: "65%",
+            source: "Aggregator CLANS guide",
+          },
+          {
+            drop: "100-225 Gems",
+            rate: "27.3%",
+            source: "Aggregator CLANS guide",
+          },
+          {
+            drop: "Viking Hat (Clan-only)",
+            rate: "2.7%",
+            source: "Aggregator CLANS guide",
+          },
+          {
+            drop: "Clan Pitchfork (Clan-only)",
+            rate: "1.6%",
+            source: "Aggregator CLANS guide",
+          },
+          {
+            drop: "Clan Dynamite (Clan-only)",
+            rate: "1.6%",
+            source: "Aggregator CLANS guide",
+          },
+          {
+            drop: "Clan Vacuum (Clan-only)",
+            rate: "1.6%",
+            source: "Aggregator CLANS guide",
+          },
+          {
+            drop: "Sparttan-Hat (rarest)",
+            rate: "0.5% (reported)",
+            source: "dujseks5cqq0r.cloudfront.net attestation — not yet first-party",
+          },
+        ],
+      },
+      {
+        id: "clans-mechanics-cost",
+        type: "data-table",
+        heading: "CLANS in-game loop — create cost and conversion rate",
+        columns: [
+          { key: "step", label: "Step" },
+          { key: "details", label: "What happens" },
+        ],
+        rows: [
+          {
+            step: "Create a clan",
+            details:
+              "Pay 500 Gems at the CLANS booth and pick a clan name + clan tag. First-party costs and naming constraints are still pending confirmation.",
+          },
+          {
+            step: "Earn Clan Tokens",
+            details:
+              "Daily clan quests grant Clan Tokens to each clan member. Token rates per quest have not been first-party published.",
+          },
+          {
+            step: "Convert to Clan Chests",
+            details:
+              "10 Clan Tokens = 1 Clan Chest per clan member, delivered at week's end.",
+          },
+          {
+            step: "Pull from the chest table",
+            details:
+              "Each Chest resolves one of the six above drops (Viking Hat, three Clan tools, the two Gem ranges) at the listed rates; the 0.5% Sparttan-Hat remains a reported figure until Garage Games confirms it.",
+          },
+        ],
+      },
+      {
+        id: "clans-mechanics-pending",
+        type: "callout",
+        heading: "CLANS — what Garage Games has not yet confirmed",
+        tone: "caution",
+        title: "First-party confirmation still pending",
+        body: "The 2026-09-22T16:24 UTC follow-up build's chest table, the 500-Gem create cost, and the 10-token = 1-chest conversion rate are sourced from third-party aggregators. Garage Games has not yet published a written patch log for the CLANS follow-up build, and the 0.5% Sparttan-Hat attestation is reported only. Pull a Chest only after you have re-checked the official game page or the creator-group channels for first-party confirmation.",
       },
       {
         id: "changelog-api-only",
@@ -714,6 +844,10 @@ export const contentPages: PageContent[] = [
       "updates-limited-events",
       "updates-alien-event",
       "updates-alien-coins-end-date",
+      "updates-clans-create-cost",
+      "updates-clans-token-to-chest",
+      "updates-clans-chest-table",
+      "updates-chapter-3-window",
     ],
     relatedPageIds: [
       "fixed-search-for-the-needle-codes-en-US",
@@ -725,7 +859,7 @@ export const contentPages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed: "2026-09-23",
+    lastReviewed: "2026-09-24",
   },
   {
     id: "fixed-search-for-the-needle-tips-en-US",
