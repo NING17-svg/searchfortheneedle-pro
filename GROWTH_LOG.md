@@ -94,3 +94,7 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - URLs affected: No URL changes; only the existing fixed ad module containers are now wired to real Adsterra placements.
 - Ad baseline: Six fixed ad units are populated and active; component shell, page positions, and theme are unchanged.
 - Verification: Full `npm run verify` (typecheck, lint, template, content, indexnow, build, rendered SEO).
+
+## 2026-10-01 — shared Worker deployment maintenance
+
+User-authorized routing migration to `guide-pool-05` / Worker `streamacheesepull-pro`; source push is connected to the shared Cloudflare Git build via the repository deploy hook. Content and public URL identities are unchanged. Completion is tracked by the central group migration report and live source/version verification.
